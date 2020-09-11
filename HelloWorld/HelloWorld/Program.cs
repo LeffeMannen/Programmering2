@@ -9,8 +9,6 @@ namespace HelloWorld
         {
             Console.WriteLine("Hello Niklas!");
 
-
-
             Console.WriteLine("Enter your name:");
             string name = Console.ReadLine();
 
@@ -48,12 +46,10 @@ namespace HelloWorld
             Console.WriteLine("Are you alive?");
             string alive = Console.ReadLine();
 
-
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Your name is " + name + "\nYour are " + age + " years old \nAlive? = " + alive);
 
-            
             Console.WriteLine("Tryck på (1) om du tyckte det var kul att trycka på knappar hehe :)");
             Console.WriteLine("Tryck på (2) om du inte tyckte att det var kul att trycka på knappar :(");
             var game = Convert.ToInt32(Console.ReadLine());
