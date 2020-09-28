@@ -16,9 +16,9 @@ namespace Metoder
 
             string[] reverse = new string[3] { "Jag ", "heter ", "Andreas "};
             Console.WriteLine(ord(reverse));
+
             Console.WriteLine();
             Console.WriteLine("Largest Number: " + sort(number).Item1 + "\nSmallest Number: " + sort(number).Item2);
-
         }
 
         static int add(int[] number)
@@ -42,7 +42,6 @@ namespace Metoder
             Console.WriteLine();
             for (int i = 0; i < reverse.Length; i++)
             {
-                
                 sum += reverse[i];
             }
             return sum;
