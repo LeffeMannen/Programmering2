@@ -37,7 +37,6 @@ namespace OOP_inlämning
         {
             _cost = cost;
         }
-
     }
 }
 
