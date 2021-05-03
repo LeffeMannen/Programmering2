@@ -7,9 +7,8 @@
         mc:Ignorable="d"
         Title="board" Height="450" Width="450">
     <Grid>
-        <Button Content="test" Height="450" HorizontalAlignment="Left" Name="btn_1" VerticalAlignment="Top" Width="450" Click="btn_1_click" Background="Salmon"></Button>
-        <Image Height="400" HorizontalAlignment="center" Name="chess_board" Stretch="Fill" VerticalAlignment="center" Width="400" Source="Slutprojekt;component/pieces/Chess_board.png"></Image>
-        
+        <Image Height="450" HorizontalAlignment="center" Name="chess_board" Stretch="Fill" VerticalAlignment="center" Width="450" Source="Slutprojekt;component/pieces/Chess_boardBackground.png"></Image>
+
         <!--black pieces row 1-->
         <Image Height="50" Name="chess_rookBlack1" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_rookB.png" Margin="25,17,375,367"></Image>
         <Image Height="50" Name="chess_knightBlack1" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_knightB.png" Margin="75,17,325,367"></Image>
@@ -21,15 +20,35 @@
         <Image Height="50" Name="chess_rookBlack2" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_rookB.png" Margin="375,17,25,367"></Image>
         
         <!--black pieces row 2-->
-        <Image Height="50" Name="chess_pawn1" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnB.png" Margin="25,67,375,317"></Image>
-        <Image Height="50" Name="chess_pawn2" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnB.png" Margin="75,67,325,317"></Image>
-        <Image Height="50" Name="chess_pawn3" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnB.png" Margin="125,67,275,317"></Image>
-        <Image Height="50" Name="chess_pawn4" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnB.png" Margin="175,67,225,317"></Image>
-        <Image Height="50" Name="chess_pawn5" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnB.png" Margin="225,67,175,317"></Image>
-        <Image Height="50" Name="chess_pawn6" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnB.png" Margin="275,67,125,317"></Image>
-        <Image Height="50" Name="chess_pawn7" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnB.png" Margin="325,67,75,317"></Image>
-        <Image Height="50" Name="chess_pawn8" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnB.png" Margin="375,67,25,317"></Image>
+        <Image Height="50" Name="chess_pawnB1" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnB.png" Margin="25,67,375,317"></Image>
+        <Image Height="50" Name="chess_pawnB2" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnB.png" Margin="75,67,325,317"></Image>
+        <Image Height="50" Name="chess_pawnB3" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnB.png" Margin="125,67,275,317"></Image>
+        <Image Height="50" Name="chess_pawnB4" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnB.png" Margin="175,67,225,317"></Image>
+        <Image Height="50" Name="chess_pawnB5" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnB.png" Margin="225,67,175,317"></Image>
+        <Image Height="50" Name="chess_pawnB6" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnB.png" Margin="275,67,125,317"></Image>
+        <Image Height="50" Name="chess_pawnB7" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnB.png" Margin="325,67,75,317"></Image>
+        <Image Height="50" Name="chess_pawnB8" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnB.png" Margin="375,67,25,317"></Image>
 
+
+        <!--white pieces row 1-->
+        <Image Height="50" Name="chess_rookWhite1" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_rookW.png" Margin="25,367,375,17"></Image>
+        <Image Height="50" Name="chess_knightWhite1" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_knightW.png" Margin="75,367,325,17"></Image>
+        <Image Height="50" Name="chess_bishopWhite1" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_bishopW.png" Margin="125,367,275,17"></Image>
+        <Image Height="50" Name="chess_queenWhite" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_queenW.png" Margin="175,367,225,17"></Image>
+        <Image Height="50" Name="chess_kingWhite" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_kingW.png" Margin="225,367,175,17"></Image>
+        <Image Height="50" Name="chess_bishopWhite2" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_bishopW.png" Margin="275,367,125,17"></Image>
+        <Image Height="50" Name="chess_knightWhite2" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_knightW.png" Margin="325,367,75,17"></Image>
+        <Image Height="50" Name="chess_rookWhite2" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_rookW.png" Margin="375,367,25,17"></Image>
+
+        <!--white pieces row 2-->
+        <Image Height="50" Name="chess_pawnW1" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnW.png" Margin="25,317,375,67"></Image>
+        <Image Height="50" Name="chess_pawnW2" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnW.png" Margin="75,317,325,67"></Image>
+        <Image Height="50" Name="chess_pawnW3" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnW.png" Margin="125,317,275,67"></Image>
+        <Image Height="50" Name="chess_pawnW4" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnW.png" Margin="175,317,225,67"></Image>
+        <Image Height="50" Name="chess_pawnW5" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnW.png" Margin="225,317,175,67"></Image>
+        <Image Height="50" Name="chess_pawnW6" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnW.png" Margin="275,317,125,67"></Image>
+        <Image Height="50" Name="chess_pawnW7" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnW.png" Margin="325,317,75,67"></Image>
+        <Image Height="50" Name="chess_pawnW8" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnW.png" Margin="375,317,25,67"></Image>
 
 
 
