@@ -9,6 +9,9 @@
     <Grid>
         <Image Height="450" HorizontalAlignment="center" Name="chess_board" Stretch="Fill" VerticalAlignment="center" Width="450" Source="Slutprojekt;component/pieces/Chess_boardBackground.png"></Image>
 
+
+        <Label Name="Text" FontSize="18" Margin="175,-10,-175,10" >Whites Turn</Label>
+        
         <!--black pieces row 1-->
         <Button Click="ChessRookBlack" Command="{Binding Path=DisplayProductCommand}" Width="50" Height="50" Background="Transparent" BorderThickness="0" Margin="25,20,375,365">
             <Image Source="/Slutprojekt;component/pieces/Chess_rookB.png"/>

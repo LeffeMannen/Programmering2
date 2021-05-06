@@ -32,6 +32,8 @@
             <RowDefinition Height="0.5*"/>
         </Grid.RowDefinitions>
 
+        
+        
         <!-- row 1 -->
         <Button FontSize="10" Grid.Row="0" Grid.Column="0" Content=""/>
         <Button FontSize="10" Grid.Row="0" Grid.Column="1" Content="1"/>
