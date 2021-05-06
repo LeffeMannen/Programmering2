@@ -10,14 +10,31 @@
         <Image Height="450" HorizontalAlignment="center" Name="chess_board" Stretch="Fill" VerticalAlignment="center" Width="450" Source="Slutprojekt;component/pieces/Chess_boardBackground.png"></Image>
 
         <!--black pieces row 1-->
-        <Image Height="50" Name="chess_rookBlack1" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_rookB.png" Margin="25,17,375,367"></Image>
-        <Image Height="50" Name="chess_knightBlack1" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_knightB.png" Margin="75,17,325,367"></Image>
-        <Image Height="50" Name="chess_bishopBlack1" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_bishopB.png" Margin="125,17,275,367"></Image>
-        <Image Height="50" Name="chess_queenBlack" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_queenB.png" Margin="175,17,225,367"></Image>
-        <Image Height="50" Name="chess_kingBlack" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_kingB.png" Margin="225,17,175,367"></Image>
-        <Image Height="50" Name="chess_bishopBlack2" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_bishopB.png" Margin="275,17,125,367"></Image>
-        <Image Height="50" Name="chess_knightBlack2" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_knightB.png" Margin="325,17,75,367"></Image>
-        <Image Height="50" Name="chess_rookBlack2" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_rookB.png" Margin="375,17,25,367"></Image>
+        <Button Click="ChessRookBlack" Command="{Binding Path=DisplayProductCommand}" Width="50" Height="50" Background="Transparent" BorderThickness="0" Margin="25,20,375,365">
+            <Image Source="/Slutprojekt;component/pieces/Chess_rookB.png"/>
+        </Button>
+        <Button Click="ChessKnightBlack" Command="{Binding Path=DisplayProductCommand}" Width="50" Height="50" Background="Transparent" BorderThickness="0" Margin="75,20,325,365">
+            <Image Source="/Slutprojekt;component/pieces/Chess_knightB.png"/>
+        </Button>
+        <Button Click="ChessBishopBlack" Command="{Binding Path=DisplayProductCommand}" Width="50" Height="50" Background="Transparent" BorderThickness="0" Margin="125,20,275,365">
+            <Image Source="/Slutprojekt;component/pieces/Chess_bishopB.png"/>
+        </Button>
+        <Button Click="ChessQueenBlack" Command="{Binding Path=DisplayProductCommand}" Width="50" Height="50" Background="Transparent" BorderThickness="0" Margin="175,20,225,365">
+            <Image Source="/Slutprojekt;component/pieces/Chess_queenB.png"/>
+        </Button>
+        <Button Click="ChessKingBlack" Command="{Binding Path=DisplayProductCommand}" Width="50" Height="50" Background="Transparent" BorderThickness="0" Margin="225,20,175,365">
+            <Image Source="/Slutprojekt;component/pieces/Chess_kingB.png"/>
+        </Button>
+        <Button Click="ChessBishopBlack2" Command="{Binding Path=DisplayProductCommand}" Width="50" Height="50" Background="Transparent" BorderThickness="0" Margin="275,20,125,365">
+            <Image Source="/Slutprojekt;component/pieces/Chess_bishopB.png"/>
+        </Button>
+        <Button Click="ChessKnightBlack2" Command="{Binding Path=DisplayProductCommand}" Width="50" Height="50" Background="Transparent" BorderThickness="0" Margin="325,20,75,365">
+            <Image Source="/Slutprojekt;component/pieces/Chess_knightB.png"/>
+        </Button>
+        <Button Click="ChessRookBlack2" Command="{Binding Path=DisplayProductCommand}" Width="50" Height="50" Background="Transparent" BorderThickness="0" Margin="375,20,25,365">
+            <Image Source="/Slutprojekt;component/pieces/Chess_RookB.png"/>
+        </Button>
+        
         
         <!--black pieces row 2-->
         <Image Height="50" Name="chess_pawnB1" Stretch="Fill" Width="50" Source="/Slutprojekt;component/pieces/Chess_pawnB.png" Margin="25,67,375,317"></Image>

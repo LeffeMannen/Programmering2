@@ -21,5 +21,38 @@ namespace Slutprojekt
         {
             InitializeComponent();
         }
+
+        private void ChessRookBlack(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void ChessKnightBlack(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void ChessBishopBlack(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void ChessQueenBlack(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void ChessKingBlack(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void ChessBishopBlack2(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void ChessKnightBlack2(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void ChessRookBlack2(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

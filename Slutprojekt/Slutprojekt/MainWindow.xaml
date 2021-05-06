@@ -6,7 +6,150 @@
         xmlns:local="clr-namespace:Slutprojekt"
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="400">
-    <Grid x:Name="content" Loaded="content_Loaded" Background="DimGray">
-       
+    <Grid Background="DimGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+
+        <!-- row 1 -->
+        <Button FontSize="10" Grid.Row="0" Grid.Column="0" Content=""/>
+        <Button FontSize="10" Grid.Row="0" Grid.Column="1" Content="1"/>
+        <Button FontSize="10" Grid.Row="0" Grid.Column="2" Content="2"/>
+        <Button FontSize="10" Grid.Row="0" Grid.Column="3" Content="3"/>
+        <Button FontSize="10" Grid.Row="0" Grid.Column="4" Content="4"/>
+        <Button FontSize="10" Grid.Row="0" Grid.Column="5" Content="5"/>
+        <Button FontSize="10" Grid.Row="0" Grid.Column="6" Content="6"/>
+        <Button FontSize="10" Grid.Row="0" Grid.Column="7" Content="7"/>
+        <Button FontSize="10" Grid.Row="0" Grid.Column="8" Content="8"/>
+        <Button FontSize="10" Grid.Row="0" Grid.Column="9" Content=""/>
+
+        <!-- row 2 -->
+        <Button FontSize="10" Grid.Row="1" Grid.Column="0" Content="A"/>
+        <Button FontSize="10" Grid.Row="1" Grid.Column="1" Content="A1"/>
+        <Button FontSize="10" Grid.Row="1" Grid.Column="2" Content="A2"/>
+        <Button FontSize="10" Grid.Row="1" Grid.Column="3" Content="A3"/>
+        <Button FontSize="10" Grid.Row="1" Grid.Column="4" Content="A4"/>
+        <Button FontSize="10" Grid.Row="1" Grid.Column="5" Content="A5"/>
+        <Button FontSize="10" Grid.Row="1" Grid.Column="6" Content="A6"/>
+        <Button FontSize="10" Grid.Row="1" Grid.Column="7" Content="A7"/>
+        <Button FontSize="10" Grid.Row="1" Grid.Column="8" Content="A8"/>
+        <Button FontSize="10" Grid.Row="1" Grid.Column="9" Content=""/>
+
+        <!-- row 3 -->
+        <Button FontSize="10" Grid.Row="2" Grid.Column="0" Content="B"/>
+        <Button FontSize="10" Grid.Row="2" Grid.Column="1" Content="B1"/>
+        <Button FontSize="10" Grid.Row="2" Grid.Column="2" Content="B2"/>
+        <Button FontSize="10" Grid.Row="2" Grid.Column="3" Content="B3"/>
+        <Button FontSize="10" Grid.Row="2" Grid.Column="4" Content="B4"/>
+        <Button FontSize="10" Grid.Row="2" Grid.Column="5" Content="B5"/>
+        <Button FontSize="10" Grid.Row="2" Grid.Column="6" Content="B6"/>
+        <Button FontSize="10" Grid.Row="2" Grid.Column="7" Content="B7"/>
+        <Button FontSize="10" Grid.Row="2" Grid.Column="8" Content="B8"/>
+        <Button FontSize="10" Grid.Row="2" Grid.Column="9" Content=""/>
+
+        <!-- row 4 -->
+        <Button FontSize="10" Grid.Row="3" Grid.Column="0" Content="C"/>
+        <Button FontSize="10" Grid.Row="3" Grid.Column="1" Content="C1"/>
+        <Button FontSize="10" Grid.Row="3" Grid.Column="2" Content="C2"/>
+        <Button FontSize="10" Grid.Row="3" Grid.Column="3" Content="C3"/>
+        <Button FontSize="10" Grid.Row="3" Grid.Column="4" Content="C4"/>
+        <Button FontSize="10" Grid.Row="3" Grid.Column="5" Content="C5"/>
+        <Button FontSize="10" Grid.Row="3" Grid.Column="6" Content="C6"/>
+        <Button FontSize="10" Grid.Row="3" Grid.Column="7" Content="C7"/>
+        <Button FontSize="10" Grid.Row="3" Grid.Column="8" Content="C8"/>
+        <Button FontSize="10" Grid.Row="3" Grid.Column="9" Content=""/>
+
+        <!-- row 5 -->
+        <Button FontSize="10" Grid.Row="4" Grid.Column="0" Content="D"/>
+        <Button FontSize="10" Grid.Row="4" Grid.Column="1" Content="D1"/>
+        <Button FontSize="10" Grid.Row="4" Grid.Column="2" Content="D2"/>
+        <Button FontSize="10" Grid.Row="4" Grid.Column="3" Content="D3"/>
+        <Button FontSize="10" Grid.Row="4" Grid.Column="4" Content="D4"/>
+        <Button FontSize="10" Grid.Row="4" Grid.Column="5" Content="D5"/>
+        <Button FontSize="10" Grid.Row="4" Grid.Column="6" Content="D6"/>
+        <Button FontSize="10" Grid.Row="4" Grid.Column="7" Content="D7"/>
+        <Button FontSize="10" Grid.Row="4" Grid.Column="8" Content="D8"/>
+        <Button FontSize="10" Grid.Row="4" Grid.Column="9" Content=""/>
+
+        <!-- row 6 -->
+        <Button FontSize="10" Grid.Row="5" Grid.Column="0" Content="E"/>
+        <Button FontSize="10" Grid.Row="5" Grid.Column="1" Content="E1"/>
+        <Button FontSize="10" Grid.Row="5" Grid.Column="2" Content="E2"/>
+        <Button FontSize="10" Grid.Row="5" Grid.Column="3" Content="E3"/>
+        <Button FontSize="10" Grid.Row="5" Grid.Column="4" Content="E4"/>
+        <Button FontSize="10" Grid.Row="5" Grid.Column="5" Content="E5"/>
+        <Button FontSize="10" Grid.Row="5" Grid.Column="6" Content="E6"/>
+        <Button FontSize="10" Grid.Row="5" Grid.Column="7" Content="E7"/>
+        <Button FontSize="10" Grid.Row="5" Grid.Column="8" Content="E8"/>
+        <Button FontSize="10" Grid.Row="5" Grid.Column="9" Content=""/>
+
+        <!-- row 7 -->
+        <Button FontSize="10" Grid.Row="6" Grid.Column="0" Content="F"/>
+        <Button FontSize="10" Grid.Row="6" Grid.Column="1" Content="F1"/>
+        <Button FontSize="10" Grid.Row="6" Grid.Column="2" Content="F2"/>
+        <Button FontSize="10" Grid.Row="6" Grid.Column="3" Content="F3"/>
+        <Button FontSize="10" Grid.Row="6" Grid.Column="4" Content="F4"/>
+        <Button FontSize="10" Grid.Row="6" Grid.Column="5" Content="F5"/>
+        <Button FontSize="10" Grid.Row="6" Grid.Column="6" Content="F6"/>
+        <Button FontSize="10" Grid.Row="6" Grid.Column="7" Content="F7"/>
+        <Button FontSize="10" Grid.Row="6" Grid.Column="8" Content="F8"/>
+        <Button FontSize="10" Grid.Row="6" Grid.Column="9" Content=""/>
+
+        <!-- row 8 -->
+        <Button FontSize="10" Grid.Row="7" Grid.Column="0" Content="G"/>
+        <Button FontSize="10" Grid.Row="7" Grid.Column="1" Content="G1"/>
+        <Button FontSize="10" Grid.Row="7" Grid.Column="2" Content="G2"/>
+        <Button FontSize="10" Grid.Row="7" Grid.Column="3" Content="G3"/>
+        <Button FontSize="10" Grid.Row="7" Grid.Column="4" Content="G4"/>
+        <Button FontSize="10" Grid.Row="7" Grid.Column="5" Content="G5"/>
+        <Button FontSize="10" Grid.Row="7" Grid.Column="6" Content="G6"/>
+        <Button FontSize="10" Grid.Row="7" Grid.Column="7" Content="G7"/>
+        <Button FontSize="10" Grid.Row="7" Grid.Column="8" Content="G8"/>
+        <Button FontSize="10" Grid.Row="7" Grid.Column="9" Content=""/>
+
+        <!-- row 9 -->
+        <Button FontSize="10" Grid.Row="8" Grid.Column="0" Content="H"/>
+        <Button FontSize="10" Grid.Row="8" Grid.Column="1" Content="H1"/>
+        <Button FontSize="10" Grid.Row="8" Grid.Column="2" Content="H2"/>
+        <Button FontSize="10" Grid.Row="8" Grid.Column="3" Content="H3"/>
+        <Button FontSize="10" Grid.Row="8" Grid.Column="4" Content="H4"/>
+        <Button FontSize="10" Grid.Row="8" Grid.Column="5" Content="H5"/>
+        <Button FontSize="10" Grid.Row="8" Grid.Column="6" Content="H6"/>
+        <Button FontSize="10" Grid.Row="8" Grid.Column="7" Content="H7"/>
+        <Button FontSize="10" Grid.Row="8" Grid.Column="8" Content="H8"/>
+        <Button FontSize="10" Grid.Row="8" Grid.Column="9" Content=""/>
+
+        <!-- row 10 -->
+        <Button FontSize="10" Grid.Row="9" Grid.Column="1" Content=""/>
+        <Button FontSize="10" Grid.Row="9" Grid.Column="0" Content=""/>
+        <Button FontSize="10" Grid.Row="9" Grid.Column="2" Content=""/>
+        <Button FontSize="10" Grid.Row="9" Grid.Column="3" Content=""/>
+        <Button FontSize="10" Grid.Row="9" Grid.Column="4" Content=""/>
+        <Button FontSize="10" Grid.Row="9" Grid.Column="5" Content=""/>
+        <Button FontSize="10" Grid.Row="9" Grid.Column="6" Content=""/>
+        <Button FontSize="10" Grid.Row="9" Grid.Column="7" Content=""/>
+        <Button FontSize="10" Grid.Row="9" Grid.Column="8" Content=""/>
+        <Button FontSize="10" Grid.Row="9" Grid.Column="9" Content=""/>
     </Grid>
 </Window>
