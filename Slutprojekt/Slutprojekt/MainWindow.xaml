@@ -5,153 +5,438 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Slutprojekt"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="400">
-    <Grid Background="DimGray">
+        Title="MainWindow" Height="750" Width="1050">
+
+    <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.5*"/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="170"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.5*"/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        
-        
-        <!-- row 1 -->
-        <Button FontSize="10" Grid.Row="0" Grid.Column="0" Content=""/>
-        <Button FontSize="10" Grid.Row="0" Grid.Column="1" Content="1"/>
-        <Button FontSize="10" Grid.Row="0" Grid.Column="2" Content="2"/>
-        <Button FontSize="10" Grid.Row="0" Grid.Column="3" Content="3"/>
-        <Button FontSize="10" Grid.Row="0" Grid.Column="4" Content="4"/>
-        <Button FontSize="10" Grid.Row="0" Grid.Column="5" Content="5"/>
-        <Button FontSize="10" Grid.Row="0" Grid.Column="6" Content="6"/>
-        <Button FontSize="10" Grid.Row="0" Grid.Column="7" Content="7"/>
-        <Button FontSize="10" Grid.Row="0" Grid.Column="8" Content="8"/>
-        <Button FontSize="10" Grid.Row="0" Grid.Column="9" Content=""/>
 
-        <!-- row 2 -->
-        <Button FontSize="10" Grid.Row="1" Grid.Column="0" Content="A"/>
-        <Button FontSize="10" Grid.Row="1" Grid.Column="1" Content="A1"/>
-        <Button FontSize="10" Grid.Row="1" Grid.Column="2" Content="A2"/>
-        <Button FontSize="10" Grid.Row="1" Grid.Column="3" Content="A3"/>
-        <Button FontSize="10" Grid.Row="1" Grid.Column="4" Content="A4"/>
-        <Button FontSize="10" Grid.Row="1" Grid.Column="5" Content="A5"/>
-        <Button FontSize="10" Grid.Row="1" Grid.Column="6" Content="A6"/>
-        <Button FontSize="10" Grid.Row="1" Grid.Column="7" Content="A7"/>
-        <Button FontSize="10" Grid.Row="1" Grid.Column="8" Content="A8"/>
-        <Button FontSize="10" Grid.Row="1" Grid.Column="9" Content=""/>
+        <Grid x:Name="GamePanel" Grid.Row="1" Grid.Column="1" Background="#202020">
+            
+            <!-- Black out -->
+            <Grid Width="250" Height="250" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,70,50,0" Background="AliceBlue">
+                <Image Source="/Slutprojekt;component/pieces/Chess_boardBackgroundColor.png"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="0.5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition Height="0.5*"/>
+                    </Grid.RowDefinitions>
 
-        <!-- row 3 -->
-        <Button FontSize="10" Grid.Row="2" Grid.Column="0" Content="B"/>
-        <Button FontSize="10" Grid.Row="2" Grid.Column="1" Content="B1"/>
-        <Button FontSize="10" Grid.Row="2" Grid.Column="2" Content="B2"/>
-        <Button FontSize="10" Grid.Row="2" Grid.Column="3" Content="B3"/>
-        <Button FontSize="10" Grid.Row="2" Grid.Column="4" Content="B4"/>
-        <Button FontSize="10" Grid.Row="2" Grid.Column="5" Content="B5"/>
-        <Button FontSize="10" Grid.Row="2" Grid.Column="6" Content="B6"/>
-        <Button FontSize="10" Grid.Row="2" Grid.Column="7" Content="B7"/>
-        <Button FontSize="10" Grid.Row="2" Grid.Column="8" Content="B8"/>
-        <Button FontSize="10" Grid.Row="2" Grid.Column="9" Content=""/>
+                    <!-- row 1 black -->
+                    <Button x:Name="Black1" Grid.Column="1" Grid.Row="1" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                    </Button>
+                    <Button x:Name="Black2" Grid.Column="2" Grid.Row="1" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                    </Button>
+                    <Button x:Name="Black3" Grid.Column="3" Grid.Row="1" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                    </Button>
+                    <Button x:Name="Black4" Grid.Column="4" Grid.Row="1" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                    </Button>
 
-        <!-- row 4 -->
-        <Button FontSize="10" Grid.Row="3" Grid.Column="0" Content="C"/>
-        <Button FontSize="10" Grid.Row="3" Grid.Column="1" Content="C1"/>
-        <Button FontSize="10" Grid.Row="3" Grid.Column="2" Content="C2"/>
-        <Button FontSize="10" Grid.Row="3" Grid.Column="3" Content="C3"/>
-        <Button FontSize="10" Grid.Row="3" Grid.Column="4" Content="C4"/>
-        <Button FontSize="10" Grid.Row="3" Grid.Column="5" Content="C5"/>
-        <Button FontSize="10" Grid.Row="3" Grid.Column="6" Content="C6"/>
-        <Button FontSize="10" Grid.Row="3" Grid.Column="7" Content="C7"/>
-        <Button FontSize="10" Grid.Row="3" Grid.Column="8" Content="C8"/>
-        <Button FontSize="10" Grid.Row="3" Grid.Column="9" Content=""/>
+                    <!-- row 2 black -->
+                    <Button x:Name="Black5" Grid.Column="1" Grid.Row="2" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                    </Button>
+                    <Button x:Name="Black6" Grid.Column="2" Grid.Row="2" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                    </Button>
+                    <Button x:Name="Black7" Grid.Column="3" Grid.Row="2" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                    </Button>
+                    <Button x:Name="Black8" Grid.Column="4" Grid.Row="2" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                    </Button>
 
-        <!-- row 5 -->
-        <Button FontSize="10" Grid.Row="4" Grid.Column="0" Content="D"/>
-        <Button FontSize="10" Grid.Row="4" Grid.Column="1" Content="D1"/>
-        <Button FontSize="10" Grid.Row="4" Grid.Column="2" Content="D2"/>
-        <Button FontSize="10" Grid.Row="4" Grid.Column="3" Content="D3"/>
-        <Button FontSize="10" Grid.Row="4" Grid.Column="4" Content="D4"/>
-        <Button FontSize="10" Grid.Row="4" Grid.Column="5" Content="D5"/>
-        <Button FontSize="10" Grid.Row="4" Grid.Column="6" Content="D6"/>
-        <Button FontSize="10" Grid.Row="4" Grid.Column="7" Content="D7"/>
-        <Button FontSize="10" Grid.Row="4" Grid.Column="8" Content="D8"/>
-        <Button FontSize="10" Grid.Row="4" Grid.Column="9" Content=""/>
+                    <!-- row 3 black -->
+                    <Button x:Name="Black9" Grid.Column="1" Grid.Row="3" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                    </Button>
+                    <Button x:Name="Black10" Grid.Column="2" Grid.Row="3" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                    </Button>
+                    <Button x:Name="Black11" Grid.Column="3" Grid.Row="3" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                    </Button>
+                    <Button x:Name="Black12" Grid.Column="4" Grid.Row="3" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                    </Button>
 
-        <!-- row 6 -->
-        <Button FontSize="10" Grid.Row="5" Grid.Column="0" Content="E"/>
-        <Button FontSize="10" Grid.Row="5" Grid.Column="1" Content="E1"/>
-        <Button FontSize="10" Grid.Row="5" Grid.Column="2" Content="E2"/>
-        <Button FontSize="10" Grid.Row="5" Grid.Column="3" Content="E3"/>
-        <Button FontSize="10" Grid.Row="5" Grid.Column="4" Content="E4"/>
-        <Button FontSize="10" Grid.Row="5" Grid.Column="5" Content="E5"/>
-        <Button FontSize="10" Grid.Row="5" Grid.Column="6" Content="E6"/>
-        <Button FontSize="10" Grid.Row="5" Grid.Column="7" Content="E7"/>
-        <Button FontSize="10" Grid.Row="5" Grid.Column="8" Content="E8"/>
-        <Button FontSize="10" Grid.Row="5" Grid.Column="9" Content=""/>
+                    <!-- row 4 black -->
+                    <Button x:Name="Black13" Grid.Column="1" Grid.Row="4" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                    </Button>
+                    <Button x:Name="Black14" Grid.Column="2" Grid.Row="4" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                    </Button>
+                    <Button x:Name="Black15" Grid.Column="3" Grid.Row="4" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                    </Button>
+                    <Button x:Name="Black16" Grid.Column="4" Grid.Row="4" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                    </Button>
+                </Grid>
+            </Grid>
+            
+            <!-- White out -->
+            <Grid Width="250" Height="250" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,70" Background="AliceBlue">
+                <Image Source="/Slutprojekt;component/pieces/Chess_boardBackgroundColor.png"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="0.5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition Height="0.5*"/>
+                    </Grid.RowDefinitions>
 
-        <!-- row 7 -->
-        <Button FontSize="10" Grid.Row="6" Grid.Column="0" Content="F"/>
-        <Button FontSize="10" Grid.Row="6" Grid.Column="1" Content="F1"/>
-        <Button FontSize="10" Grid.Row="6" Grid.Column="2" Content="F2"/>
-        <Button FontSize="10" Grid.Row="6" Grid.Column="3" Content="F3"/>
-        <Button FontSize="10" Grid.Row="6" Grid.Column="4" Content="F4"/>
-        <Button FontSize="10" Grid.Row="6" Grid.Column="5" Content="F5"/>
-        <Button FontSize="10" Grid.Row="6" Grid.Column="6" Content="F6"/>
-        <Button FontSize="10" Grid.Row="6" Grid.Column="7" Content="F7"/>
-        <Button FontSize="10" Grid.Row="6" Grid.Column="8" Content="F8"/>
-        <Button FontSize="10" Grid.Row="6" Grid.Column="9" Content=""/>
+                    <!-- row 1 white -->
+                    <Button x:Name="White1" Grid.Column="1" Grid.Row="1" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                    </Button>
+                    <Button x:Name="White2" Grid.Column="2" Grid.Row="1" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                    </Button>
+                    <Button x:Name="White3" Grid.Column="3" Grid.Row="1" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                    </Button>
+                    <Button x:Name="White4" Grid.Column="4" Grid.Row="1" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                    </Button>
 
-        <!-- row 8 -->
-        <Button FontSize="10" Grid.Row="7" Grid.Column="0" Content="G"/>
-        <Button FontSize="10" Grid.Row="7" Grid.Column="1" Content="G1"/>
-        <Button FontSize="10" Grid.Row="7" Grid.Column="2" Content="G2"/>
-        <Button FontSize="10" Grid.Row="7" Grid.Column="3" Content="G3"/>
-        <Button FontSize="10" Grid.Row="7" Grid.Column="4" Content="G4"/>
-        <Button FontSize="10" Grid.Row="7" Grid.Column="5" Content="G5"/>
-        <Button FontSize="10" Grid.Row="7" Grid.Column="6" Content="G6"/>
-        <Button FontSize="10" Grid.Row="7" Grid.Column="7" Content="G7"/>
-        <Button FontSize="10" Grid.Row="7" Grid.Column="8" Content="G8"/>
-        <Button FontSize="10" Grid.Row="7" Grid.Column="9" Content=""/>
+                    <!-- row 2 white -->
+                    <Button x:Name="White5" Grid.Column="1" Grid.Row="2" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                    </Button>
+                    <Button x:Name="White6" Grid.Column="2" Grid.Row="2" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                    </Button>
+                    <Button x:Name="White7" Grid.Column="3" Grid.Row="2" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                    </Button>
+                    <Button x:Name="White8" Grid.Column="4" Grid.Row="2" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                    </Button>
 
-        <!-- row 9 -->
-        <Button FontSize="10" Grid.Row="8" Grid.Column="0" Content="H"/>
-        <Button FontSize="10" Grid.Row="8" Grid.Column="1" Content="H1"/>
-        <Button FontSize="10" Grid.Row="8" Grid.Column="2" Content="H2"/>
-        <Button FontSize="10" Grid.Row="8" Grid.Column="3" Content="H3"/>
-        <Button FontSize="10" Grid.Row="8" Grid.Column="4" Content="H4"/>
-        <Button FontSize="10" Grid.Row="8" Grid.Column="5" Content="H5"/>
-        <Button FontSize="10" Grid.Row="8" Grid.Column="6" Content="H6"/>
-        <Button FontSize="10" Grid.Row="8" Grid.Column="7" Content="H7"/>
-        <Button FontSize="10" Grid.Row="8" Grid.Column="8" Content="H8"/>
-        <Button FontSize="10" Grid.Row="8" Grid.Column="9" Content=""/>
+                    <!-- row 3 white -->
+                    <Button x:Name="White9" Grid.Column="1" Grid.Row="3" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                    </Button>
+                    <Button x:Name="White10" Grid.Column="2" Grid.Row="3" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                    </Button>
+                    <Button x:Name="White11" Grid.Column="3" Grid.Row="3" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                    </Button>
+                    <Button x:Name="White12" Grid.Column="4" Grid.Row="3" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                    </Button>
 
-        <!-- row 10 -->
-        <Button FontSize="10" Grid.Row="9" Grid.Column="1" Content=""/>
-        <Button FontSize="10" Grid.Row="9" Grid.Column="0" Content=""/>
-        <Button FontSize="10" Grid.Row="9" Grid.Column="2" Content=""/>
-        <Button FontSize="10" Grid.Row="9" Grid.Column="3" Content=""/>
-        <Button FontSize="10" Grid.Row="9" Grid.Column="4" Content=""/>
-        <Button FontSize="10" Grid.Row="9" Grid.Column="5" Content=""/>
-        <Button FontSize="10" Grid.Row="9" Grid.Column="6" Content=""/>
-        <Button FontSize="10" Grid.Row="9" Grid.Column="7" Content=""/>
-        <Button FontSize="10" Grid.Row="9" Grid.Column="8" Content=""/>
-        <Button FontSize="10" Grid.Row="9" Grid.Column="9" Content=""/>
+                    <!-- row 4 white -->
+                    <Button x:Name="White13" Grid.Column="1" Grid.Row="4" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                    </Button>
+                    <Button x:Name="White14" Grid.Column="2" Grid.Row="4" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                    </Button>
+                    <Button x:Name="White15" Grid.Column="3" Grid.Row="4" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                    </Button>
+                    <Button x:Name="White16" Grid.Column="4" Grid.Row="4" Background="#7d8796" BorderThickness="0">
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                    </Button>
+                </Grid>
+            </Grid>
+            
+            <!-- Main Grid-->
+            <Grid Width="450" Height="450" Background="AliceBlue" Margin="80,0,0,0" HorizontalAlignment="Left">
+                <Image Source="/Slutprojekt;component/pieces/Chess_boardBackgroundColor.png"/>
+                <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition Height="0.5*"/>
+                </Grid.RowDefinitions>
+
+                <!-- y1 -->
+                <Button x:Name="x1y1" Grid.Column="1" Grid.Row="8" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x2y1" Grid.Column="1" Grid.Row="7" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x3y1" Grid.Column="1" Grid.Row="6" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x4y1" Grid.Column="1" Grid.Row="5" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x5y1" Grid.Column="1" Grid.Row="4" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x6y1" Grid.Column="1" Grid.Row="3" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x7y1" Grid.Column="1" Grid.Row="2" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x8y1" Grid.Column="1" Grid.Row="1" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+
+
+                <!-- y2 -->
+                <Button x:Name="x1y2" Grid.Column="2" Grid.Row="8" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x2y2" Grid.Column="2" Grid.Row="7" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x3y2" Grid.Column="2" Grid.Row="6" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x4y2" Grid.Column="2" Grid.Row="5" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x5y2" Grid.Column="2" Grid.Row="4" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x6y2" Grid.Column="2" Grid.Row="3" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x7y2" Grid.Column="2" Grid.Row="2" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x8y2" Grid.Column="2" Grid.Row="1" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+
+
+
+                <!-- y3 -->
+                <Button x:Name="x1y3" Grid.Column="3" Grid.Row="8" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x2y3" Grid.Column="3" Grid.Row="7" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x3y3" Grid.Column="3" Grid.Row="6" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x4y3" Grid.Column="3" Grid.Row="5" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x5y3" Grid.Column="3" Grid.Row="4" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x6y3" Grid.Column="3" Grid.Row="3" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x7y3" Grid.Column="3" Grid.Row="2" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x8y3" Grid.Column="3" Grid.Row="1" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+
+
+                <!-- y4 -->
+                <Button x:Name="x1y4" Grid.Column="4" Grid.Row="8" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x2y4" Grid.Column="4" Grid.Row="7" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x3y4" Grid.Column="4" Grid.Row="6" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x4y4" Grid.Column="4" Grid.Row="5" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x5y4" Grid.Column="4" Grid.Row="4" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x6y4" Grid.Column="4" Grid.Row="3" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x7y4" Grid.Column="4" Grid.Row="2" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x8y4" Grid.Column="4" Grid.Row="1" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+
+
+                <!-- y5 -->
+                <Button x:Name="x1y5" Grid.Column="5" Grid.Row="8" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x2y5" Grid.Column="5" Grid.Row="7" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x3y5" Grid.Column="5" Grid.Row="6" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x4y5" Grid.Column="5" Grid.Row="5" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x5y5" Grid.Column="5" Grid.Row="4" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x6y5" Grid.Column="5" Grid.Row="3" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x7y5" Grid.Column="5" Grid.Row="2" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x8y5" Grid.Column="5" Grid.Row="1" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+
+
+                <!-- y6 -->
+                <Button x:Name="x1y6" Grid.Column="6" Grid.Row="8" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x2y6" Grid.Column="6" Grid.Row="7" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x3y6" Grid.Column="6" Grid.Row="6" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x4y6" Grid.Column="6" Grid.Row="5" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x5y6" Grid.Column="6" Grid.Row="4" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x6y6" Grid.Column="6" Grid.Row="3" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x7y6" Grid.Column="6" Grid.Row="2" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x8y6" Grid.Column="6" Grid.Row="1" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+
+
+                <!-- y7 -->
+                <Button x:Name="x1y7" Grid.Column="7" Grid.Row="8" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x2y7" Grid.Column="7" Grid.Row="7" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x3y7" Grid.Column="7" Grid.Row="6" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x4y7" Grid.Column="7" Grid.Row="5" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x5y7" Grid.Column="7" Grid.Row="4" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x6y7" Grid.Column="7" Grid.Row="3" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x7y7" Grid.Column="7" Grid.Row="2" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x8y7" Grid.Column="7" Grid.Row="1" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+
+
+                <!-- y8 -->
+                <Button x:Name="x1y8" Grid.Column="8" Grid.Row="8" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x2y8" Grid.Column="8" Grid.Row="7" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x3y8" Grid.Column="8" Grid.Row="6" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x4y8" Grid.Column="8" Grid.Row="5" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x5y8" Grid.Column="8" Grid.Row="4" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x6y8" Grid.Column="8" Grid.Row="3" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+                <Button x:Name="x7y8" Grid.Column="8" Grid.Row="2" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>
+                </Button>
+                <Button x:Name="x8y8" Grid.Column="8" Grid.Row="1" Background="#7d8796" BorderThickness="0">
+                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                </Button>
+
+                </Grid>
+            </Grid>
+
+            <StackPanel VerticalAlignment="Top" Grid.Row="1" Grid.Column="1" Margin="0,10,0,0">
+                <Border Width="130" Height="45" Background="LightPink" CornerRadius="15" Margin="535,0,0,0">
+                    <TextBlock x:Name="Player2" Text="Player 2" FontSize="20" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="1" Margin="0,0,0,10">
+                <Border Width="130" Height="45" Background="LightPink" CornerRadius="15" Margin="535,0,0,0">
+                    <TextBlock x:Name="Player1" Text="Player 1" FontSize="20" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>
