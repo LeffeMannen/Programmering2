@@ -7,7 +7,39 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="pieces\" />
+    <None Remove="pieces\Chess_bishopB.png" />
+    <None Remove="pieces\Chess_bishopW.png" />
+    <None Remove="pieces\Chess_boardBackgroundColor.png" />
+    <None Remove="pieces\Chess_boardBlack.png" />
+    <None Remove="pieces\Chess_boardWhite.png" />
+    <None Remove="pieces\Chess_kingB.png" />
+    <None Remove="pieces\Chess_kingW.png" />
+    <None Remove="pieces\Chess_knightB.png" />
+    <None Remove="pieces\Chess_knightW.png" />
+    <None Remove="pieces\Chess_pawnB.png" />
+    <None Remove="pieces\Chess_pawnW.png" />
+    <None Remove="pieces\Chess_queenB.png" />
+    <None Remove="pieces\Chess_queenW.png" />
+    <None Remove="pieces\Chess_rookB.png" />
+    <None Remove="pieces\Chess_rookW.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="pieces\Chess_bishopB.png" />
+    <Resource Include="pieces\Chess_bishopW.png" />
+    <Resource Include="pieces\Chess_boardBackgroundColor.png" />
+    <Resource Include="pieces\Chess_boardBlack.png" />
+    <Resource Include="pieces\Chess_boardWhite.png" />
+    <Resource Include="pieces\Chess_kingB.png" />
+    <Resource Include="pieces\Chess_kingW.png" />
+    <Resource Include="pieces\Chess_knightB.png" />
+    <Resource Include="pieces\Chess_knightW.png" />
+    <Resource Include="pieces\Chess_pawnB.png" />
+    <Resource Include="pieces\Chess_pawnW.png" />
+    <Resource Include="pieces\Chess_queenB.png" />
+    <Resource Include="pieces\Chess_queenW.png" />
+    <Resource Include="pieces\Chess_rookB.png" />
+    <Resource Include="pieces\Chess_rookW.png" />
   </ItemGroup>
 
 </Project>
