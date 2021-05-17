@@ -209,8 +209,9 @@
                 </Grid.RowDefinitions>
 
                 <!-- y1 -->
+
                 <Button x:Name="x1y1" Grid.Column="1" Grid.Row="8" Background="#7d8796" BorderThickness="0">
-                    <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
+                        <Image Source="/Slutprojekt;component/pieces/Chess_boardBlack.png"/>
                 </Button>
                 <Button x:Name="x2y1" Grid.Column="1" Grid.Row="7" Background="#7d8796" BorderThickness="0">
                     <Image Source="/Slutprojekt;component/pieces/Chess_boardWhite.png"/>

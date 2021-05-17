@@ -4,14 +4,19 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
+    <StartupObject>Slutprojekt.App</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <None Remove="pieces\Chess_bishopB.png" />
+=======
+>>>>>>> 4bf12b86978b2822ade8814a0aa0873558d0fd23
     <None Remove="pieces\Chess_bishopW.png" />
     <None Remove="pieces\Chess_boardBackgroundColor.png" />
     <None Remove="pieces\Chess_boardBlack.png" />
     <None Remove="pieces\Chess_boardWhite.png" />
+<<<<<<< HEAD
     <None Remove="pieces\Chess_kingB.png" />
     <None Remove="pieces\Chess_kingW.png" />
     <None Remove="pieces\Chess_knightB.png" />
@@ -26,10 +31,16 @@
 
   <ItemGroup>
     <Resource Include="pieces\Chess_bishopB.png" />
+=======
+  </ItemGroup>
+
+  <ItemGroup>
+>>>>>>> 4bf12b86978b2822ade8814a0aa0873558d0fd23
     <Resource Include="pieces\Chess_bishopW.png" />
     <Resource Include="pieces\Chess_boardBackgroundColor.png" />
     <Resource Include="pieces\Chess_boardBlack.png" />
     <Resource Include="pieces\Chess_boardWhite.png" />
+<<<<<<< HEAD
     <Resource Include="pieces\Chess_kingB.png" />
     <Resource Include="pieces\Chess_kingW.png" />
     <Resource Include="pieces\Chess_knightB.png" />
@@ -40,6 +51,35 @@
     <Resource Include="pieces\Chess_queenW.png" />
     <Resource Include="pieces\Chess_rookB.png" />
     <Resource Include="pieces\Chess_rookW.png" />
+=======
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+>>>>>>> 4bf12b86978b2822ade8814a0aa0873558d0fd23
   </ItemGroup>
 
 </Project>
