@@ -22,157 +22,149 @@
         <Grid x:Name="GamePanel" Grid.Row="1" Grid.Column="1" Background="#202020">
 
             <!-- Black out -->
-            <Grid Width="250" Height="250" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,70,50,0" Background="#4682B4">
+            <Grid Width="220" Height="220" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,95,60,0" Background="#4682B4">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="0.5*"/>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
-                        <ColumnDefinition Width="0.5*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="0.5*"/>
                         <RowDefinition/>
                         <RowDefinition/>
                         <RowDefinition/>
                         <RowDefinition/>
-                        <RowDefinition Height="0.5*"/>
                     </Grid.RowDefinitions>
 
                     <!-- row 1 black -->
-                    <Button x:Name="Black1" Grid.Column="1" Grid.Row="1" Background="#FFFFFF" BorderThickness="0">
+                    <Button x:Name="Black1" Grid.Column="3" Grid.Row="0" Background="#FFFFFF" BorderThickness="0" Click="Black1_Click">
 
                     </Button>
-                    <Button x:Name="Black2" Grid.Column="2" Grid.Row="1" Background="#6E6E6E" BorderThickness="0">
+                    <Button x:Name="Black2" Grid.Column="2" Grid.Row="0" Background="#6E6E6E" BorderThickness="0" Click="Black2_Click">
 
                     </Button>
-                    <Button x:Name="Black3" Grid.Column="3" Grid.Row="1" Background="#FFFFFF" BorderThickness="0">
+                    <Button x:Name="Black3" Grid.Column="1" Grid.Row="0" Background="#FFFFFF" BorderThickness="0" Click="Black3_Click">
 
                     </Button>
-                    <Button x:Name="Black4" Grid.Column="4" Grid.Row="1" Background="#6E6E6E" BorderThickness="0">
+                    <Button x:Name="Black4" Grid.Column="0" Grid.Row="0" Background="#6E6E6E" BorderThickness="0" Click="Black4_Click">
 
                     </Button>
 
                     <!-- row 2 black -->
-                    <Button x:Name="Black5" Grid.Column="1" Grid.Row="2" Background="#6E6E6E" BorderThickness="0">
+                    <Button x:Name="Black5" Grid.Column="3" Grid.Row="1" Background="#6E6E6E" BorderThickness="0" Click="Black5_Click">
 
                     </Button>
-                    <Button x:Name="Black6" Grid.Column="2" Grid.Row="2" Background="#FFFFFF" BorderThickness="0">
+                    <Button x:Name="Black6" Grid.Column="2" Grid.Row="1" Background="#FFFFFF" BorderThickness="0" Click="Black6_Click">
 
                     </Button>
-                    <Button x:Name="Black7" Grid.Column="3" Grid.Row="2" Background="#6E6E6E" BorderThickness="0">
+                    <Button x:Name="Black7" Grid.Column="1" Grid.Row="1" Background="#6E6E6E" BorderThickness="0" Click="Black7_Click">
 
                     </Button>
-                    <Button x:Name="Black8" Grid.Column="4" Grid.Row="2" Background="#FFFFFF" BorderThickness="0">
+                    <Button x:Name="Black8" Grid.Column="0" Grid.Row="1" Background="#FFFFFF" BorderThickness="0" Click="Black8_Click">
 
                     </Button>
 
                     <!-- row 3 black -->
-                    <Button x:Name="Black9" Grid.Column="1" Grid.Row="3" Background="#FFFFFF" BorderThickness="0">
+                    <Button x:Name="Black9" Grid.Column="3" Grid.Row="2" Background="#FFFFFF" BorderThickness="0" Click="Black9_Click">
 
                     </Button>
-                    <Button x:Name="Black10" Grid.Column="2" Grid.Row="3" Background="#6E6E6E" BorderThickness="0">
+                    <Button x:Name="Black10" Grid.Column="2" Grid.Row="2" Background="#6E6E6E" BorderThickness="0" Click="Black10_Click">
 
                     </Button>
-                    <Button x:Name="Black11" Grid.Column="3" Grid.Row="3" Background="#FFFFFF" BorderThickness="0">
+                    <Button x:Name="Black11" Grid.Column="1" Grid.Row="2" Background="#FFFFFF" BorderThickness="0" Click="Black11_Click">
 
                     </Button>
-                    <Button x:Name="Black12" Grid.Column="4" Grid.Row="3" Background="#6E6E6E" BorderThickness="0">
+                    <Button x:Name="Black12" Grid.Column="0" Grid.Row="2" Background="#6E6E6E" BorderThickness="0" Click="Black12_Click">
 
                     </Button>
 
                     <!-- row 4 black -->
-                    <Button x:Name="Black13" Grid.Column="1" Grid.Row="4" Background="#6E6E6E" BorderThickness="0">
+                    <Button x:Name="Black13" Grid.Column="3" Grid.Row="3" Background="#6E6E6E" BorderThickness="0" Click="Black13_Click">
 
                     </Button>
-                    <Button x:Name="Black14" Grid.Column="2" Grid.Row="4" Background="#FFFFFF" BorderThickness="0">
+                    <Button x:Name="Black14" Grid.Column="2" Grid.Row="3" Background="#FFFFFF" BorderThickness="0" Click="Black14_Click">
 
                     </Button>
-                    <Button x:Name="Black15" Grid.Column="3" Grid.Row="4" Background="#6E6E6E" BorderThickness="0">
+                    <Button x:Name="Black15" Grid.Column="1" Grid.Row="3" Background="#6E6E6E" BorderThickness="0" Click="Black15_Click">
 
                     </Button>
-                    <Button x:Name="Black16" Grid.Column="4" Grid.Row="4" Background="#FFFFFF" BorderThickness="0">
+                    <Button x:Name="Black16" Grid.Column="0" Grid.Row="3" Background="#FFFFFF" BorderThickness="0" Click="Black16_Click">
 
                     </Button>
                 </Grid>
             </Grid>
 
             <!-- White out -->
-            <Grid Width="250" Height="250" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,70" Background="#4682B4">
+            <Grid Width="220" Height="220" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,60,95" Background="#4682B4">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="0.5*"/>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
-                        <ColumnDefinition Width="0.5*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="0.5*"/>
                         <RowDefinition/>
                         <RowDefinition/>
                         <RowDefinition/>
                         <RowDefinition/>
-                        <RowDefinition Height="0.5*"/>
                     </Grid.RowDefinitions>
 
                     <!-- row 1 white -->
-                    <Button x:Name="White1" Grid.Column="1" Grid.Row="1" Background="#FFFFFF" BorderThickness="0">
-
+                    <Button x:Name="White1" Grid.Column="3" Grid.Row="0" Background="#FFFFFF" BorderThickness="0" Click="White1_Click">
+                        <Image x:Name="IWhite1" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="White2" Grid.Column="2" Grid.Row="1" Background="#6E6E6E" BorderThickness="0">
-
+                    <Button x:Name="White2" Grid.Column="2" Grid.Row="0" Background="#6E6E6E" BorderThickness="0" Click="White2_Click">
+                        <Image x:Name="IWhite2" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="White3" Grid.Column="3" Grid.Row="1" Background="#FFFFFF" BorderThickness="0">
-
+                    <Button x:Name="White3" Grid.Column="1" Grid.Row="0" Background="#FFFFFF" BorderThickness="0" Click="White3_Click">
+                        <Image x:Name="IWhite3" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="White4" Grid.Column="4" Grid.Row="1" Background="#6E6E6E" BorderThickness="0">
-
+                    <Button x:Name="White4" Grid.Column="0" Grid.Row="0" Background="#6E6E6E" BorderThickness="0" Click="White4_Click">
+                        <Image x:Name="IWhite4" Source="{x:Null}"/>
                     </Button>
 
                     <!-- row 2 white -->
-                    <Button x:Name="White5" Grid.Column="1" Grid.Row="2" Background="#6E6E6E" BorderThickness="0">
-
+                    <Button x:Name="White5" Grid.Column="3" Grid.Row="1" Background="#6E6E6E" BorderThickness="0" Click="White5_Click">
+                        <Image x:Name="IWhite5" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="White6" Grid.Column="2" Grid.Row="2" Background="#FFFFFF" BorderThickness="0">
-
+                    <Button x:Name="White6" Grid.Column="2" Grid.Row="1" Background="#FFFFFF" BorderThickness="0" Click="White6_Click">
+                        <Image x:Name="IWhite6" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="White7" Grid.Column="3" Grid.Row="2" Background="#6E6E6E" BorderThickness="0">
-
+                    <Button x:Name="White7" Grid.Column="1" Grid.Row="1" Background="#6E6E6E" BorderThickness="0" Click="White7_Click">
+                        <Image x:Name="IWhite7" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="White8" Grid.Column="4" Grid.Row="2" Background="#FFFFFF" BorderThickness="0">
-
+                    <Button x:Name="White8" Grid.Column="0" Grid.Row="1" Background="#FFFFFF" BorderThickness="0" Click="White8_Click">
+                        <Image x:Name="IWhite8" Source="{x:Null}"/>
                     </Button>
 
                     <!-- row 3 white -->
-                    <Button x:Name="White9" Grid.Column="1" Grid.Row="3" Background="#FFFFFF" BorderThickness="0">
-
+                    <Button x:Name="White9" Grid.Column="3" Grid.Row="2" Background="#FFFFFF" BorderThickness="0" Click="White9_Click">
+                        <Image x:Name="IWhite9" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="White10" Grid.Column="2" Grid.Row="3" Background="#6E6E6E" BorderThickness="0">
-
+                    <Button x:Name="White10" Grid.Column="2" Grid.Row="2" Background="#6E6E6E" BorderThickness="0" Click="White10_Click">
+                        <Image x:Name="IWhite10" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="White11" Grid.Column="3" Grid.Row="3" Background="#FFFFFF" BorderThickness="0">
-
+                    <Button x:Name="White11" Grid.Column="1" Grid.Row="2" Background="#FFFFFF" BorderThickness="0" Click="White11_Click">
+                        <Image x:Name="IWhite11" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="White12" Grid.Column="4" Grid.Row="3" Background="#6E6E6E" BorderThickness="0">
-
+                    <Button x:Name="White12" Grid.Column="0" Grid.Row="2" Background="#6E6E6E" BorderThickness="0" Click="White12_Click">
+                        <Image x:Name="IWhite12" Source="{x:Null}"/>
                     </Button>
 
                     <!-- row 4 white -->
-                    <Button x:Name="White13" Grid.Column="1" Grid.Row="4" Background="#6E6E6E" BorderThickness="0">
-
+                    <Button x:Name="White13" Grid.Column="3" Grid.Row="3" Background="#6E6E6E" BorderThickness="0" Click="White13_Click">
+                        <Image x:Name="IWhite13" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="White14" Grid.Column="2" Grid.Row="4" Background="#FFFFFF" BorderThickness="0">
-
+                    <Button x:Name="White14" Grid.Column="2" Grid.Row="3" Background="#FFFFFF" BorderThickness="0" Click="White14_Click">
+                        <Image x:Name="IWhite14" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="White15" Grid.Column="3" Grid.Row="4" Background="#6E6E6E" BorderThickness="0">
-
+                    <Button x:Name="White15" Grid.Column="1" Grid.Row="3" Background="#6E6E6E" BorderThickness="0" Click="White15_Click">
+                        <Image x:Name="IWhite15" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="White16" Grid.Column="4" Grid.Row="4" Background="#FFFFFF" BorderThickness="0">
-
+                    <Button x:Name="White16" Grid.Column="0" Grid.Row="3" Background="#FFFFFF" BorderThickness="0" Click="White16_Click">
+                        <Image x:Name="IWhite16" Source="{x:Null}"/>
                     </Button>
                 </Grid>
             </Grid>
@@ -181,7 +173,6 @@
             <Grid Width="450" Height="450" Background="#4682B4" Margin="80,0,0,0" HorizontalAlignment="Left">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="0.5*"/>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
@@ -190,10 +181,8 @@
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
-                        <ColumnDefinition Width="0.5*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="0.5*"/>
                         <RowDefinition/>
                         <RowDefinition/>
                         <RowDefinition/>
@@ -202,230 +191,226 @@
                         <RowDefinition/>
                         <RowDefinition/>
                         <RowDefinition/>
-                        <RowDefinition Height="0.5*"/>
                     </Grid.RowDefinitions>
 
                     <!-- x1 -->
-                    <Button x:Name="x1y1" Grid.Column="1" Grid.Row="8" Background="#6E6E6E" BorderThickness="0" Click="x1y1_Click">
+                    <Button x:Name="x1y1" Grid.Column="0" Grid.Row="7" Background="#6E6E6E" BorderThickness="0" Click="x1y1_Click">
                         <Image x:Name="Ix1y1" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x1y2" Grid.Column="1" Grid.Row="7" Background="#FFFFFF" BorderThickness="0" Click="x1y2_Click">
+                    <Button x:Name="x1y2" Grid.Column="0" Grid.Row="6" Background="#FFFFFF" BorderThickness="0" Click="x1y2_Click">
                         <Image x:Name="Ix1y2" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x1y3" Grid.Column="1" Grid.Row="6" Background="#6E6E6E" BorderThickness="0" Click="x1y3_Click">
+                    <Button x:Name="x1y3" Grid.Column="0" Grid.Row="5" Background="#6E6E6E" BorderThickness="0" Click="x1y3_Click">
                         <Image x:Name="Ix1y3" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x1y4" Grid.Column="1" Grid.Row="5" Background="#FFFFFF" BorderThickness="0" Click="x1y4_Click">
+                    <Button x:Name="x1y4" Grid.Column="0" Grid.Row="4" Background="#FFFFFF" BorderThickness="0" Click="x1y4_Click">
                         <Image x:Name="Ix1y4" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x1y5" Grid.Column="1" Grid.Row="4" Background="#6E6E6E" BorderThickness="0" Click="x1y5_Click">
+                    <Button x:Name="x1y5" Grid.Column="0" Grid.Row="3" Background="#6E6E6E" BorderThickness="0" Click="x1y5_Click">
                         <Image x:Name="Ix1y5" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x1y6" Grid.Column="1" Grid.Row="3" Background="#FFFFFF" BorderThickness="0" Click="x1y6_Click">
+                    <Button x:Name="x1y6" Grid.Column="0" Grid.Row="2" Background="#FFFFFF" BorderThickness="0" Click="x1y6_Click">
                         <Image x:Name="Ix1y6" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x1y7" Grid.Column="1" Grid.Row="2" Background="#6E6E6E" BorderThickness="0" Click="x1y7_Click">
+                    <Button x:Name="x1y7" Grid.Column="0" Grid.Row="1" Background="#6E6E6E" BorderThickness="0" Click="x1y7_Click">
                         <Image x:Name="Ix1y7" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x1y8" Grid.Column="1" Grid.Row="1" Background="#FFFFFF" BorderThickness="0" Click="x1y8_Click">
+                    <Button x:Name="x1y8" Grid.Column="0" Grid.Row="0" Background="#FFFFFF" BorderThickness="0" Click="x1y8_Click">
                         <Image x:Name="Ix1y8" Source="{x:Null}"/>
                     </Button>
 
 
                     <!-- x2 -->
-                    <Button x:Name="x2y1" Grid.Column="2" Grid.Row="8" Background="#FFFFFF" BorderThickness="0" Click="x2y1_Click">
+                    <Button x:Name="x2y1" Grid.Column="1" Grid.Row="7" Background="#FFFFFF" BorderThickness="0" Click="x2y1_Click">
                         <Image x:Name="Ix2y1" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x2y2" Grid.Column="2" Grid.Row="7" Background="#6E6E6E" BorderThickness="0" Click="x2y2_Click">
+                    <Button x:Name="x2y2" Grid.Column="1" Grid.Row="6" Background="#6E6E6E" BorderThickness="0" Click="x2y2_Click">
                         <Image x:Name="Ix2y2" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x2y3" Grid.Column="2" Grid.Row="6" Background="#FFFFFF" BorderThickness="0" Click="x2y3_Click">
+                    <Button x:Name="x2y3" Grid.Column="1" Grid.Row="5" Background="#FFFFFF" BorderThickness="0" Click="x2y3_Click">
                         <Image x:Name="Ix2y3" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x2y4" Grid.Column="2" Grid.Row="5" Background="#6E6E6E" BorderThickness="0" Click="x2y4_Click">
+                    <Button x:Name="x2y4" Grid.Column="1" Grid.Row="4" Background="#6E6E6E" BorderThickness="0" Click="x2y4_Click">
                         <Image x:Name="Ix2y4" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x2y5" Grid.Column="2" Grid.Row="4" Background="#FFFFFF" BorderThickness="0" Click="x2y5_Click">
+                    <Button x:Name="x2y5" Grid.Column="1" Grid.Row="3" Background="#FFFFFF" BorderThickness="0" Click="x2y5_Click">
                         <Image x:Name="Ix2y5" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x2y6" Grid.Column="2" Grid.Row="3" Background="#6E6E6E" BorderThickness="0" Click="x2y6_Click">
+                    <Button x:Name="x2y6" Grid.Column="1" Grid.Row="2" Background="#6E6E6E" BorderThickness="0" Click="x2y6_Click">
                         <Image x:Name="Ix2y6" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x2y7" Grid.Column="2" Grid.Row="2" Background="#FFFFFF" BorderThickness="0" Click="x2y7_Click">
+                    <Button x:Name="x2y7" Grid.Column="1" Grid.Row="1" Background="#FFFFFF" BorderThickness="0" Click="x2y7_Click">
                         <Image x:Name="Ix2y7" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x2y8" Grid.Column="2" Grid.Row="1" Background="#6E6E6E" BorderThickness="0" Click="x2y8_Click">
+                    <Button x:Name="x2y8" Grid.Column="1" Grid.Row="0" Background="#6E6E6E" BorderThickness="0" Click="x2y8_Click">
                         <Image x:Name="Ix2y8" Source="{x:Null}"/>
                     </Button>
 
 
 
                     <!-- x3 -->
-                    <Button x:Name="x3y1" Grid.Column="3" Grid.Row="8" Background="#6E6E6E" BorderThickness="0" Click="x3y1_Click">
+                    <Button x:Name="x3y1" Grid.Column="2" Grid.Row="7" Background="#6E6E6E" BorderThickness="0" Click="x3y1_Click">
                         <Image x:Name="Ix3y1" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x3y2" Grid.Column="3" Grid.Row="7" Background="#FFFFFF" BorderThickness="0" Click="x3y2_Click">
+                    <Button x:Name="x3y2" Grid.Column="2" Grid.Row="6" Background="#FFFFFF" BorderThickness="0" Click="x3y2_Click">
                         <Image x:Name="Ix3y2" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x3y3" Grid.Column="3" Grid.Row="6" Background="#6E6E6E" BorderThickness="0" Click="x3y3_Click">
+                    <Button x:Name="x3y3" Grid.Column="2" Grid.Row="5" Background="#6E6E6E" BorderThickness="0" Click="x3y3_Click">
                         <Image x:Name="Ix3y3" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x3y4" Grid.Column="3" Grid.Row="5" Background="#FFFFFF" BorderThickness="0" Click="x3y4_Click">
+                    <Button x:Name="x3y4" Grid.Column="2" Grid.Row="4" Background="#FFFFFF" BorderThickness="0" Click="x3y4_Click">
                         <Image x:Name="Ix3y4" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x3y5" Grid.Column="3" Grid.Row="4" Background="#6E6E6E" BorderThickness="0" Click="x3y5_Click">
+                    <Button x:Name="x3y5" Grid.Column="2" Grid.Row="3" Background="#6E6E6E" BorderThickness="0" Click="x3y5_Click">
                         <Image x:Name="Ix3y5" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x3y6" Grid.Column="3" Grid.Row="3" Background="#FFFFFF" BorderThickness="0" Click="x3y6_Click">
+                    <Button x:Name="x3y6" Grid.Column="2" Grid.Row="2" Background="#FFFFFF" BorderThickness="0" Click="x3y6_Click">
                         <Image x:Name="Ix3y6" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x3y7" Grid.Column="3" Grid.Row="2" Background="#6E6E6E" BorderThickness="0" Click="x3y7_Click">
+                    <Button x:Name="x3y7" Grid.Column="2" Grid.Row="1" Background="#6E6E6E" BorderThickness="0" Click="x3y7_Click">
                         <Image x:Name="Ix3y7" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x3y8" Grid.Column="3" Grid.Row="1" Background="#FFFFFF" BorderThickness="0" Click="x3y8_Click">
+                    <Button x:Name="x3y8" Grid.Column="2" Grid.Row="0" Background="#FFFFFF" BorderThickness="0" Click="x3y8_Click">
                         <Image x:Name="Ix3y8" Source="{x:Null}"/>
                     </Button>
 
 
                     <!-- x4 -->
-                    <Button x:Name="x4y1" Grid.Column="4" Grid.Row="8" Background="#FFFFFF" BorderThickness="0" Click="x4y1_Click">
+                    <Button x:Name="x4y1" Grid.Column="3" Grid.Row="7" Background="#FFFFFF" BorderThickness="0" Click="x4y1_Click">
                         <Image x:Name="Ix4y1" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x4y2" Grid.Column="4" Grid.Row="7" Background="#6E6E6E" BorderThickness="0" Click="x4y2_Click">
+                    <Button x:Name="x4y2" Grid.Column="3" Grid.Row="6" Background="#6E6E6E" BorderThickness="0" Click="x4y2_Click">
                         <Image x:Name="Ix4y2" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x4y3" Grid.Column="4" Grid.Row="6" Background="#FFFFFF" BorderThickness="0" Click="x4y3_Click">
+                    <Button x:Name="x4y3" Grid.Column="3" Grid.Row="5" Background="#FFFFFF" BorderThickness="0" Click="x4y3_Click">
                         <Image x:Name="Ix4y3" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x4y4" Grid.Column="4" Grid.Row="5" Background="#6E6E6E" BorderThickness="0" Click="x4y4_Click">
+                    <Button x:Name="x4y4" Grid.Column="3" Grid.Row="4" Background="#6E6E6E" BorderThickness="0" Click="x4y4_Click">
                         <Image x:Name="Ix4y4" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x4y5" Grid.Column="4" Grid.Row="4" Background="#FFFFFF" BorderThickness="0" Click="x4y5_Click">
+                    <Button x:Name="x4y5" Grid.Column="3" Grid.Row="3" Background="#FFFFFF" BorderThickness="0" Click="x4y5_Click">
                         <Image x:Name="Ix4y5" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x4y6" Grid.Column="4" Grid.Row="3" Background="#6E6E6E" BorderThickness="0" Click="x4y6_Click">
+                    <Button x:Name="x4y6" Grid.Column="3" Grid.Row="2" Background="#6E6E6E" BorderThickness="0" Click="x4y6_Click">
                         <Image x:Name="Ix4y6" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x4y7" Grid.Column="4" Grid.Row="2" Background="#FFFFFF" BorderThickness="0" Click="x4y7_Click">
+                    <Button x:Name="x4y7" Grid.Column="3" Grid.Row="1" Background="#FFFFFF" BorderThickness="0" Click="x4y7_Click">
                         <Image x:Name="Ix4y7" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x4y8" Grid.Column="4" Grid.Row="1" Background="#6E6E6E" BorderThickness="0" Click="x4y8_Click">
+                    <Button x:Name="x4y8" Grid.Column="3" Grid.Row="0" Background="#6E6E6E" BorderThickness="0" Click="x4y8_Click">
                         <Image x:Name="Ix4y8" Source="{x:Null}"/>
                     </Button>
 
 
                     <!-- x5 -->
-                    <Button x:Name="x5y1" Grid.Column="5" Grid.Row="8" Background="#6E6E6E" BorderThickness="0" Click="x5y1_Click">
+                    <Button x:Name="x5y1" Grid.Column="4" Grid.Row="7" Background="#6E6E6E" BorderThickness="0" Click="x5y1_Click">
                         <Image x:Name="Ix5y1" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x5y2" Grid.Column="5" Grid.Row="7" Background="#FFFFFF" BorderThickness="0" Click="x5y2_Click">
+                    <Button x:Name="x5y2" Grid.Column="4" Grid.Row="6" Background="#FFFFFF" BorderThickness="0" Click="x5y2_Click">
                         <Image x:Name="Ix5y2" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x5y3" Grid.Column="5" Grid.Row="6" Background="#6E6E6E" BorderThickness="0" Click="x5y3_Click">
+                    <Button x:Name="x5y3" Grid.Column="4" Grid.Row="5" Background="#6E6E6E" BorderThickness="0" Click="x5y3_Click">
                         <Image x:Name="Ix5y3" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x5y4" Grid.Column="5" Grid.Row="5" Background="#FFFFFF" BorderThickness="0" Click="x5y4_Click">
+                    <Button x:Name="x5y4" Grid.Column="4" Grid.Row="4" Background="#FFFFFF" BorderThickness="0" Click="x5y4_Click">
                         <Image x:Name="Ix5y4" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x5y5" Grid.Column="5" Grid.Row="4" Background="#6E6E6E" BorderThickness="0" Click="x5y5_Click">
+                    <Button x:Name="x5y5" Grid.Column="4" Grid.Row="3" Background="#6E6E6E" BorderThickness="0" Click="x5y5_Click">
                         <Image x:Name="Ix5y5" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x5y6" Grid.Column="5" Grid.Row="3" Background="#FFFFFF" BorderThickness="0" Click="x5y6_Click">
+                    <Button x:Name="x5y6" Grid.Column="4" Grid.Row="2" Background="#FFFFFF" BorderThickness="0" Click="x5y6_Click">
                         <Image x:Name="Ix5y6" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x5y7" Grid.Column="5" Grid.Row="2" Background="#6E6E6E" BorderThickness="0" Click="x5y7_Click">
+                    <Button x:Name="x5y7" Grid.Column="4" Grid.Row="1" Background="#6E6E6E" BorderThickness="0" Click="x5y7_Click">
                         <Image x:Name="Ix5y7" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x5y8" Grid.Column="5" Grid.Row="1" Background="#FFFFFF" BorderThickness="0" Click="x5y8_Click">
+                    <Button x:Name="x5y8" Grid.Column="4" Grid.Row="0" Background="#FFFFFF" BorderThickness="0" Click="x5y8_Click">
                         <Image x:Name="Ix5y8" Source="{x:Null}"/>
                     </Button>
 
 
                     <!-- x6 -->
-                    <Button x:Name="x6y1" Grid.Column="6" Grid.Row="8" Background="#FFFFFF" BorderThickness="0" Click="x6y1_Click">
+                    <Button x:Name="x6y1" Grid.Column="5" Grid.Row="7" Background="#FFFFFF" BorderThickness="0" Click="x6y1_Click">
                         <Image x:Name="Ix6y1" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x6y2" Grid.Column="6" Grid.Row="7" Background="#6E6E6E" BorderThickness="0" Click="x6y2_Click">
+                    <Button x:Name="x6y2" Grid.Column="5" Grid.Row="6" Background="#6E6E6E" BorderThickness="0" Click="x6y2_Click">
                         <Image x:Name="Ix6y2" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x6y3" Grid.Column="6" Grid.Row="6" Background="#FFFFFF" BorderThickness="0" Click="x6y3_Click">
+                    <Button x:Name="x6y3" Grid.Column="5" Grid.Row="5" Background="#FFFFFF" BorderThickness="0" Click="x6y3_Click">
                         <Image x:Name="Ix6y3" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x6y4" Grid.Column="6" Grid.Row="5" Background="#6E6E6E" BorderThickness="0" Click="x6y4_Click">
+                    <Button x:Name="x6y4" Grid.Column="5" Grid.Row="4" Background="#6E6E6E" BorderThickness="0" Click="x6y4_Click">
                         <Image x:Name="Ix6y4" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x6y5" Grid.Column="6" Grid.Row="4" Background="#FFFFFF" BorderThickness="0" Click="x6y5_Click">
+                    <Button x:Name="x6y5" Grid.Column="5" Grid.Row="3" Background="#FFFFFF" BorderThickness="0" Click="x6y5_Click">
                         <Image x:Name="Ix6y5" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x6y6" Grid.Column="6" Grid.Row="3" Background="#6E6E6E" BorderThickness="0" Click="x6y6_Click">
+                    <Button x:Name="x6y6" Grid.Column="5" Grid.Row="2" Background="#6E6E6E" BorderThickness="0" Click="x6y6_Click">
                         <Image x:Name="Ix6y6" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x6y7" Grid.Column="6" Grid.Row="2" Background="#FFFFFF" BorderThickness="0" Click="x6y7_Click">
+                    <Button x:Name="x6y7" Grid.Column="5" Grid.Row="1" Background="#FFFFFF" BorderThickness="0" Click="x6y7_Click">
                         <Image x:Name="Ix6y7" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x6y8" Grid.Column="6" Grid.Row="1" Background="#6E6E6E" BorderThickness="0" Click="x6y8_Click">
+                    <Button x:Name="x6y8" Grid.Column="5" Grid.Row="0" Background="#6E6E6E" BorderThickness="0" Click="x6y8_Click">
                         <Image x:Name="Ix6y8" Source="{x:Null}"/>
                     </Button>
 
 
                     <!-- x7 -->
-                    <Button x:Name="x7y1" Grid.Column="7" Grid.Row="8" Background="#6E6E6E" BorderThickness="0" Click="x7y1_Click">
+                    <Button x:Name="x7y1" Grid.Column="6" Grid.Row="7" Background="#6E6E6E" BorderThickness="0" Click="x7y1_Click">
                         <Image x:Name="Ix7y1" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x7y2" Grid.Column="7" Grid.Row="7" Background="#FFFFFF" BorderThickness="0" Click="x7y2_Click">
+                    <Button x:Name="x7y2" Grid.Column="6" Grid.Row="6" Background="#FFFFFF" BorderThickness="0" Click="x7y2_Click">
                         <Image x:Name="Ix7y2" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x7y3" Grid.Column="7" Grid.Row="6" Background="#6E6E6E" BorderThickness="0" Click="x7y3_Click">
+                    <Button x:Name="x7y3" Grid.Column="6" Grid.Row="5" Background="#6E6E6E" BorderThickness="0" Click="x7y3_Click">
                         <Image x:Name="Ix7y3" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x7y4" Grid.Column="7" Grid.Row="5" Background="#FFFFFF" BorderThickness="0" Click="x7y4_Click">
+                    <Button x:Name="x7y4" Grid.Column="6" Grid.Row="4" Background="#FFFFFF" BorderThickness="0" Click="x7y4_Click">
                         <Image x:Name="Ix7y4" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x7y5" Grid.Column="7" Grid.Row="4" Background="#6E6E6E" BorderThickness="0" Click="x7y5_Click">
+                    <Button x:Name="x7y5" Grid.Column="6" Grid.Row="3" Background="#6E6E6E" BorderThickness="0" Click="x7y5_Click">
                         <Image x:Name="Ix7y5" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x7y6" Grid.Column="7" Grid.Row="3" Background="#FFFFFF" BorderThickness="0" Click="x7y6_Click">
+                    <Button x:Name="x7y6" Grid.Column="6" Grid.Row="2" Background="#FFFFFF" BorderThickness="0" Click="x7y6_Click">
                         <Image x:Name="Ix7y6" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x7y7" Grid.Column="7" Grid.Row="2" Background="#6E6E6E" BorderThickness="0" Click="x7y7_Click">
+                    <Button x:Name="x7y7" Grid.Column="6" Grid.Row="1" Background="#6E6E6E" BorderThickness="0" Click="x7y7_Click">
                         <Image x:Name="Ix7y7" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x7y8" Grid.Column="7" Grid.Row="1" Background="#FFFFFF" BorderThickness="0" Click="x7y8_Click">
+                    <Button x:Name="x7y8" Grid.Column="6" Grid.Row="0" Background="#FFFFFF" BorderThickness="0" Click="x7y8_Click">
                         <Image x:Name="Ix7y8" Source="{x:Null}"/>
                     </Button>
 
 
                     <!-- x8 -->
-                    <Button x:Name="x8y1" Grid.Column="8" Grid.Row="8" Background="#FFFFFF" BorderThickness="0" Click="x8y1_Click">
+                    <Button x:Name="x8y1" Grid.Column="7" Grid.Row="7" Background="#FFFFFF" BorderThickness="0" Click="x8y1_Click">
                         <Image x:Name="Ix8y1" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x8y2" Grid.Column="8" Grid.Row="7" Background="#6E6E6E" BorderThickness="0" Click="x8y2_Click">
+                    <Button x:Name="x8y2" Grid.Column="7" Grid.Row="6" Background="#6E6E6E" BorderThickness="0" Click="x8y2_Click">
                         <Image x:Name="Ix8y2" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x8y3" Grid.Column="8" Grid.Row="6" Background="#FFFFFF" BorderThickness="0" Click="x8y3_Click">
+                    <Button x:Name="x8y3" Grid.Column="7" Grid.Row="5" Background="#FFFFFF" BorderThickness="0" Click="x8y3_Click">
                         <Image x:Name="Ix8y3" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x8y4" Grid.Column="8" Grid.Row="5" Background="#6E6E6E" BorderThickness="0" Click="x8y4_Click">
+                    <Button x:Name="x8y4" Grid.Column="7" Grid.Row="4" Background="#6E6E6E" BorderThickness="0" Click="x8y4_Click">
                         <Image x:Name="Ix8y4" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x8y5" Grid.Column="8" Grid.Row="4" Background="#FFFFFF" BorderThickness="0" Click="x8y5_Click">
+                    <Button x:Name="x8y5" Grid.Column="7" Grid.Row="3" Background="#FFFFFF" BorderThickness="0" Click="x8y5_Click">
                         <Image x:Name="Ix8y5" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x8y6" Grid.Column="8" Grid.Row="3" Background="#6E6E6E" BorderThickness="0" Click="x8y6_Click">
+                    <Button x:Name="x8y6" Grid.Column="7" Grid.Row="2" Background="#6E6E6E" BorderThickness="0" Click="x8y6_Click">
                         <Image x:Name="Ix8y6" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x8y7" Grid.Column="8" Grid.Row="2" Background="#FFFFFF" BorderThickness="0" Click="x8y7_Click">
+                    <Button x:Name="x8y7" Grid.Column="7" Grid.Row="1" Background="#FFFFFF" BorderThickness="0" Click="x8y7_Click">
                         <Image x:Name="Ix8y7" Source="{x:Null}"/>
                     </Button>
-                    <Button x:Name="x8y8" Grid.Column="8" Grid.Row="1" Background="#6E6E6E" BorderThickness="0" Click="x8y8_Click">
+                    <Button x:Name="x8y8" Grid.Column="7" Grid.Row="0" Background="#6E6E6E" BorderThickness="0" Click="x8y8_Click">
                         <Image x:Name="Ix8y8" Source="{x:Null}"/>
                     </Button>
 
                 </Grid>
             </Grid>
-
-
-
 
 
             <StackPanel VerticalAlignment="Top" Grid.Row="1" Grid.Column="1" Margin="0,10,0,0">
