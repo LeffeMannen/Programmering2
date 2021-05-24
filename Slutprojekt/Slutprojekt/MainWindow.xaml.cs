@@ -23,8 +23,6 @@ namespace Slutprojekt
         {
             InitializeComponent();
 
-
-            //Chess images
             {
 
                 for (int i = 1; i < 9; i++) ImageName[i] = "Chess_PawnW.png";
@@ -50,78 +48,79 @@ namespace Slutprojekt
                 ImageName[31] = "Chess_QueenB.png";
                 ImageName[32] = "Chess_KingB.png";
 
+                #region Images
+                ChessImages[1] = Ix1y1;
+                ChessImages[2] = Ix1y2;
+                ChessImages[3] = Ix1y3;
+                ChessImages[4] = Ix1y4;
+                ChessImages[5] = Ix1y5;
+                ChessImages[6] = Ix1y6;
+                ChessImages[7] = Ix1y7;
+                ChessImages[8] = Ix1y8;
 
-                ChessImages[2] = Ix1y1;
-                ChessImages[3] = Ix1y2;
-                ChessImages[4] = Ix1y3;
-                ChessImages[5] = Ix1y4;
-                ChessImages[6] = Ix1y5;
-                ChessImages[7] = Ix1y6;
-                ChessImages[8] = Ix1y7;
-                ChessImages[9] = Ix1y8;
+                ChessImages[9] = Ix2y1;
+                ChessImages[10] = Ix2y2;
+                ChessImages[11] = Ix2y3;
+                ChessImages[12] = Ix2y4;
+                ChessImages[13] = Ix2y5;
+                ChessImages[14] = Ix2y6;
+                ChessImages[15] = Ix2y7;
+                ChessImages[16] = Ix2y8;
 
-                ChessImages[10] = Ix2y1;
-                ChessImages[11] = Ix2y2;
-                ChessImages[12] = Ix2y3;
-                ChessImages[13] = Ix2y4;
-                ChessImages[14] = Ix2y5;
-                ChessImages[15] = Ix2y6;
-                ChessImages[16] = Ix2y7;
-                ChessImages[17] = Ix2y8;
+                ChessImages[17] = Ix3y1;
+                ChessImages[18] = Ix3y2;
+                ChessImages[19] = Ix3y3;
+                ChessImages[20] = Ix3y4;
+                ChessImages[21] = Ix3y5;
+                ChessImages[22] = Ix3y6;
+                ChessImages[23] = Ix3y7;
+                ChessImages[24] = Ix3y8;
+            
+                ChessImages[25] = Ix4y1;
+                ChessImages[26] = Ix4y2;
+                ChessImages[27] = Ix4y3;
+                ChessImages[28] = Ix4y4;
+                ChessImages[39] = Ix4y5;
+                ChessImages[30] = Ix4y6;
+                ChessImages[31] = Ix4y7;
+                ChessImages[32] = Ix4y8;
+                
+                ChessImages[33] = Ix5y1;
+                ChessImages[34] = Ix5y2;
+                ChessImages[35] = Ix5y3;
+                ChessImages[36] = Ix5y4;
+                ChessImages[37] = Ix5y5;
+                ChessImages[38] = Ix5y6;
+                ChessImages[39] = Ix5y7;
+                ChessImages[40] = Ix5y8;
 
-                ChessImages[18] = Ix3y1;
-                ChessImages[19] = Ix3y2;
-                ChessImages[20] = Ix3y3;
-                ChessImages[1] = Ix3y4;
-                ChessImages[1] = Ix3y5;
-                ChessImages[1] = Ix3y6;
-                ChessImages[1] = Ix3y7;
-                ChessImages[1] = Ix3y8;
+                ChessImages[41] = Ix6y1;
+                ChessImages[42] = Ix6y2;
+                ChessImages[43] = Ix6y3;
+                ChessImages[44] = Ix6y4;
+                ChessImages[45] = Ix6y5;
+                ChessImages[46] = Ix6y6;
+                ChessImages[47] = Ix6y7;
+                ChessImages[48] = Ix6y8;
 
-                ChessImages[1] = Ix4y1;
-                ChessImages[1] = Ix4y2;
-                ChessImages[1] = Ix4y3;
-                ChessImages[1] = Ix4y4;
-                ChessImages[1] = Ix4y5;
-                ChessImages[1] = Ix4y6;
-                ChessImages[1] = Ix4y7;
-                ChessImages[1] = Ix4y8;
+                ChessImages[49] = Ix7y1;
+                ChessImages[50] = Ix7y2;
+                ChessImages[51] = Ix7y3;
+                ChessImages[52] = Ix7y4;
+                ChessImages[53] = Ix7y5;
+                ChessImages[54] = Ix7y6;
+                ChessImages[55] = Ix7y7;
+                ChessImages[56] = Ix7y8;
 
-                ChessImages[1] = Ix5y1;
-                ChessImages[1] = Ix5y2;
-                ChessImages[1] = Ix5y3;
-                ChessImages[1] = Ix5y4;
-                ChessImages[1] = Ix5y5;
-                ChessImages[1] = Ix5y6;
-                ChessImages[1] = Ix5y7;
-                ChessImages[1] = Ix5y8;
-
-                ChessImages[1] = Ix6y1;
-                ChessImages[1] = Ix6y2;
-                ChessImages[1] = Ix6y3;
-                ChessImages[1] = Ix6y4;
-                ChessImages[1] = Ix6y5;
-                ChessImages[1] = Ix6y6;
-                ChessImages[1] = Ix6y7;
-                ChessImages[1] = Ix6y8;
-
-                ChessImages[1] = Ix7y1;
-                ChessImages[1] = Ix7y2;
-                ChessImages[1] = Ix7y3;
-                ChessImages[1] = Ix7y4;
-                ChessImages[1] = Ix7y5;
-                ChessImages[1] = Ix7y6;
-                ChessImages[1] = Ix7y7;
-                ChessImages[1] = Ix7y8;
-
-                ChessImages[1] = Ix8y1;
-                ChessImages[1] = Ix8y2;
-                ChessImages[1] = Ix8y3;
-                ChessImages[1] = Ix8y4;
-                ChessImages[1] = Ix8y5;
-                ChessImages[1] = Ix8y6;
-                ChessImages[1] = Ix8y7;
-                ChessImages[1] = Ix8y8;
+                ChessImages[57] = Ix8y1;
+                ChessImages[58] = Ix8y2;
+                ChessImages[59] = Ix8y3;
+                ChessImages[60] = Ix8y4;
+                ChessImages[61] = Ix8y5;
+                ChessImages[62] = Ix8y6;
+                ChessImages[63] = Ix8y7;
+                ChessImages[64] = Ix8y8;
+                #endregion
             }
             StartGame();
         }
@@ -133,11 +132,94 @@ namespace Slutprojekt
 
             x = 1;
             y = 2;
-            int WPawn1 = Game.Piece.White.Pawn[0];
 
-            Game.Base.ID[Game.GetBaseID(x, y)] = WPawn1;
-            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x, y)], WPawn1);
+            #region Place pieces
+            int[] PawnW = Game.Piece.White.Pawn;
+            int[] RookW = Game.Piece.White.Rook;
+            int[] KnightW = Game.Piece.White.Knight;
+            int[] BishopW = Game.Piece.White.Bishop;
+            int KingW = Game.Piece.White.King;
+            int QueenW = Game.Piece.White.Queen;
 
+            Game.Base.ID[Game.GetBaseID(x, y)] = PawnW[0];
+            Game.Base.ID[Game.GetBaseID(x, y)] = PawnW[1];
+            Game.Base.ID[Game.GetBaseID(x, y)] = PawnW[2];
+            Game.Base.ID[Game.GetBaseID(x, y)] = PawnW[3];
+            Game.Base.ID[Game.GetBaseID(x, y)] = PawnW[4];
+            Game.Base.ID[Game.GetBaseID(x, y)] = PawnW[5];
+            Game.Base.ID[Game.GetBaseID(x, y)] = PawnW[6];
+            Game.Base.ID[Game.GetBaseID(x, y)] = PawnW[7];
+
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x, y)], PawnW[0]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 1, y)], PawnW[1]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 2, y)], PawnW[2]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 3, y)], PawnW[3]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 4, y)], PawnW[4]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 5, y)], PawnW[5]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 6, y)], PawnW[6]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 7, y)], PawnW[7]);
+
+            Game.Base.ID[Game.GetBaseID(x, y)] = RookW[0];
+            Game.Base.ID[Game.GetBaseID(x, y)] = KnightW[0];
+            Game.Base.ID[Game.GetBaseID(x, y)] = BishopW[0];
+            Game.Base.ID[Game.GetBaseID(x, y)] = KingW;
+            Game.Base.ID[Game.GetBaseID(x, y)] = QueenW;
+            Game.Base.ID[Game.GetBaseID(x, y)] = BishopW[1];
+            Game.Base.ID[Game.GetBaseID(x, y)] = KnightW[1];
+            Game.Base.ID[Game.GetBaseID(x, y)] = RookW[1];
+
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x, y - 1)], RookW[0]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 1, y - 1)], KnightW[0]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 2, y - 1)], BishopW[0]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 3, y - 1)], KingW);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 4, y - 1)], QueenW);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 5, y - 1)], BishopW[1]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 6, y - 1)], KnightW[1]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 7, y - 1)], RookW[1]);
+
+            int[] PawnB = Game.Piece.Black.Pawn;
+            int[] RookB = Game.Piece.Black.Rook;
+            int[] KnightB = Game.Piece.Black.Knight;
+            int[] BishopB = Game.Piece.Black.Bishop;
+            int KingB = Game.Piece.Black.King;
+            int QueenB = Game.Piece.Black.Queen;
+
+            Game.Base.ID[Game.GetBaseID(x, y)] = PawnB[0];
+            Game.Base.ID[Game.GetBaseID(x, y)] = PawnB[1];
+            Game.Base.ID[Game.GetBaseID(x, y)] = PawnB[2];
+            Game.Base.ID[Game.GetBaseID(x, y)] = PawnB[3];
+            Game.Base.ID[Game.GetBaseID(x, y)] = PawnB[4];
+            Game.Base.ID[Game.GetBaseID(x, y)] = PawnB[5];
+            Game.Base.ID[Game.GetBaseID(x, y)] = PawnB[6];
+            Game.Base.ID[Game.GetBaseID(x, y)] = PawnB[7];
+                                                     
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x, y + 5)], PawnB[0]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 1, y + 5)], PawnB[1]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 2, y + 5)], PawnB[2]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 3, y + 5)], PawnB[3]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 4, y + 5)], PawnB[4]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 5, y + 5)], PawnB[5]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 6, y + 5)], PawnB[6]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 7, y + 5)], PawnB[7]);
+
+            Game.Base.ID[Game.GetBaseID(x, y)] = RookB[0];
+            Game.Base.ID[Game.GetBaseID(x, y)] = KnightB[0];
+            Game.Base.ID[Game.GetBaseID(x, y)] = BishopB[0];
+            Game.Base.ID[Game.GetBaseID(x, y)] = KingB;
+            Game.Base.ID[Game.GetBaseID(x, y)] = QueenB;
+            Game.Base.ID[Game.GetBaseID(x, y)] = BishopB[1];
+            Game.Base.ID[Game.GetBaseID(x, y)] = KnightB[1];
+            Game.Base.ID[Game.GetBaseID(x, y)] = RookB[1];
+
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x, y + 6)], RookB[0]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 1, y + 6)], KnightB[0]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 2, y + 6)], BishopB[0]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 3, y + 6)], KingB);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 4, y + 6)], QueenB);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 5, y + 6)], BishopB[1]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 6, y + 6)], KnightB[1]);
+            Game.SetImage(MainWindow.ChessImages[Game.GetBaseID(x + 7, y + 6)], RookB[1]);
+            #endregion
         }
 
         #region Click On Chess Button
@@ -562,5 +644,6 @@ namespace Slutprojekt
 
         }
         #endregion
+
     }
 }
