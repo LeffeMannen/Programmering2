@@ -16,9 +16,10 @@ namespace Slutprojekt
         public static bool MyTurn = true;
         public static bool Clickable = false;
 
-        //-----Piece Variables
+        //Pjäser variablar
         public static class Piece
         {
+            //Vitt ID 1-16
             public static class White
             {
                 public static int[] Pawn = { 1, 2, 3, 4, 5, 6, 7, 8 };
@@ -28,6 +29,7 @@ namespace Slutprojekt
                 public static int Queen = 15;
                 public static int King = 16;
             }
+            //Svart ID 17-32
             public static class Black
             {
                 public static int[] Pawn = { 17, 18, 19, 20, 21, 22, 23, 24 };
@@ -39,7 +41,8 @@ namespace Slutprojekt
             }
         }
 
-        //Base
+        //Basen 
+        //Om det går över 64 så chrashar den
         public static class Base
         {
             public static int[] ID = new int[65];
@@ -47,17 +50,18 @@ namespace Slutprojekt
             public static int[] Y = new int[65];
         }
 
+        //Få bas ID
         public static int GetBaseID(int x, int y)
         {
             return ((x - 1) * 8) + y;
         }
 
-
-        //Move
+        //Jag vet inte varför det inte går att flytta mina pjäser, jag har följt
+        //en video som har visat hur han har gjort det och jag har följt samma
+        //steg, men jag har inte fått samma resultat.
         public static bool IsMovable(int px, int py, int nx, int ny)
         {
 
-            int ptype = GetType(px, py);
             int ntype = GetType(nx, ny);
 
             int pmodel = GetModel(px, py);
@@ -66,6 +70,9 @@ namespace Slutprojekt
             double Distance = GetDistance(px, py, nx, ny);
             int way = GetWay(px, py, nx, ny);
 
+            //Regler för alla pjäser
+            #region Rules for Pieces
+            //Regler för Pawn
             if (GetTypeName(px, py) == "Pawn")
             {
                 if (pmodel == White)
@@ -92,10 +99,203 @@ namespace Slutprojekt
                             if (ntype > 0 && pmodel != nmodel) return true;
                     }
                 }
+
             }
+
+            //Regler för Bishop
+            if (GetTypeName(px, py) == "Bishop")
+            {
+                if (pmodel == White)
+                {
+                    if (Distance == 1 && way == Way.Up && Distance == 1 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 1 && way == Way.Up && Distance == -1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == -1 && way == Way.Down && Distance == 1 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == -1 && way == Way.Down && Distance == -1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                }
+                if (pmodel == Black)
+                {
+                    if (Distance == 1 && way == Way.Down && Distance == 1 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 1 && way == Way.Down && Distance == -1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == -1 && way == Way.Up && Distance == 1 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == -1 && way == Way.Up && Distance == -1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                }
+            }
+
+            //Regler för Knight
+            if (GetTypeName(px, py) == "Knight")
+            {
+                if (pmodel == White)
+                {
+                    if (Distance == 2 && way == Way.Up && Distance == 1 && way == Way.Right || Distance == 1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 2 && way == Way.Down && Distance == 1 && way == Way.Right || Distance == 1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 2 && way == Way.Right && Distance == 1 && way == Way.Up || Distance == 1 && way == Way.Down && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 2 && way == Way.Left && Distance == 1 && way == Way.Down || Distance == 1 && way == Way.Up && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                }
+                if (pmodel == Black)
+                {
+                    if (Distance == 2 && way == Way.Up && Distance == 1 && way == Way.Right || Distance == 1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 2 && way == Way.Down && Distance == 1 && way == Way.Right || Distance == 1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 2 && way == Way.Right && Distance == 1 && way == Way.Up || Distance == 1 && way == Way.Down && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 2 && way == Way.Left && Distance == 1 && way == Way.Down || Distance == 1 && way == Way.Up && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                }
+            }
+
+            //Regler för Rook
+            if (GetTypeName(px, py) == "Rook")
+            {
+                if (pmodel == White)
+                {
+                    if (Distance == 8 && way == Way.Up && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 8 && way == Way.Down && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 8 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 8 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                }
+                if (pmodel == Black)
+                {
+                    if (Distance == 8 && way == Way.Up && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 8 && way == Way.Down && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 8 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 8 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                }
+            }
+
+            //Regler för King
+            if (GetTypeName(px, py) == "King")
+            {
+                if (pmodel == White)
+                {
+                    if (Distance == 1 && way == Way.Up && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 1 && way == Way.Down && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 1 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+
+                    if (Distance == 1 && way == Way.Up && Distance == 1 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 1 && way == Way.Up && Distance == -1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == -1 && way == Way.Down && Distance == 1 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == -1 && way == Way.Down && Distance == -1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                }
+                if (pmodel == Black)
+                {
+                    if (Distance == 1 && way == Way.Up && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 1 && way == Way.Down && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 1 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+
+                    if (Distance == 1 && way == Way.Down && Distance == 1 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 1 && way == Way.Down && Distance == -1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == -1 && way == Way.Up && Distance == 1 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == -1 && way == Way.Up && Distance == -1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                }
+            }
+
+            //Regler för Queen
+            if (GetTypeName(px, py) == "Queen")
+            {
+                if (pmodel == White)
+                {
+                    if (Distance == 1 && way == Way.Up && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 1 && way == Way.Down && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 1 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+
+                    if (Distance == 1 && way == Way.Down && Distance == 1 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 1 && way == Way.Down && Distance == -1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == -1 && way == Way.Up && Distance == 1 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == -1 && way == Way.Up && Distance == -1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+
+                    if (Distance == 8 && way == Way.Up && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 8 && way == Way.Down && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 8 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 8 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                }
+                if (pmodel == Black)
+                {
+                    if (Distance == 1 && way == Way.Up && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 1 && way == Way.Down && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 1 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+
+                    if (Distance == 1 && way == Way.Down && Distance == 1 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 1 && way == Way.Down && Distance == -1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == -1 && way == Way.Up && Distance == 1 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == -1 && way == Way.Up && Distance == -1 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+
+                    if (Distance == 8 && way == Way.Up && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 8 && way == Way.Down && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 8 && way == Way.Right && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                    if (Distance == 8 && way == Way.Left && ntype == 0)
+                        if (ntype > 0 && pmodel != nmodel) return true;
+                }
+
+            }
+#endregion
             return false;
         }
 
+        //Få riktningen för pjäsen
         public static int GetWay(int px, int py, int nx, int ny)
         {
             int ix = (int)(double)Math.Sqrt(Math.Pow(px - nx, 2));
@@ -122,12 +322,13 @@ namespace Slutprojekt
             return 0;
         }
 
+        //Hitta Avstånd
         public static double GetDistance(int px, int py, int nx, int ny)
         {
             return (double)(Math.Sqrt(Math.Pow(px - nx, 2) + Math.Pow(py - ny, 2)));
         }
 
-
+        //Hitta vilken pjäs det är och returna ett namn för variabeln
         public static string GetTypeName(int x, int y)
         {
             int type = Base.ID[GetBaseID(x, y)];
@@ -141,7 +342,7 @@ namespace Slutprojekt
             return "";
         }
 
-
+        //Sätter basen
         public static bool SetBase(int px, int py, int x, int y)
         {
             int type = GetType(px, py);
@@ -156,6 +357,7 @@ namespace Slutprojekt
             return true;
         }
 
+        //Sätter bilderna
         public static void SetImage(Image img, int type)
         {
             img.Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority.Normal, (System.Threading.ThreadStart)delegate ()
@@ -165,7 +367,7 @@ namespace Slutprojekt
             });
         }
 
-
+        //Bilderna får en model, 1 till 16 = White; 17 till 32 = Black
         public static int GetModel(int x, int y)
         {
             int model = Base.ID[GetBaseID(x, y)];
@@ -174,7 +376,7 @@ namespace Slutprojekt
             return -1;
         }
 
-
+        //Får en typ
         public static int GetType(int x, int y)
         {
             if (x < 1 || x > 8) return 0;
@@ -182,8 +384,7 @@ namespace Slutprojekt
             return Base.ID[GetBaseID(x, y)];
         }
 
-
-        //------Select On ChessPiece
+        //När man trycker på en pjäs så markeras pjäsen
         public static void SelectBase(int x, int y)
         {
             MainWindow.ClickX = x;
@@ -191,9 +392,11 @@ namespace Slutprojekt
             System.Threading.Thread T = new System.Threading.Thread(Select);
             T.Start();
         }
+
+        //Väljer en pjäs
         public static void Select()
         {
-            if (MyTurn)
+            if (MyTurn == true)
             {
                 if (Clickable)
                 {
@@ -211,6 +414,5 @@ namespace Slutprojekt
                 }
             }
         }
-
     }
 }

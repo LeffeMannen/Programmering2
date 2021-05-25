@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Threading;
 using System.Windows.Media.Imaging;
 
 namespace Slutprojekt
@@ -11,8 +12,6 @@ namespace Slutprojekt
     /// </summary>
     public partial class MainWindow : Window
     {
-
-
         public static int ClickX = 0;
         public static int ClickY = 0;
 
@@ -21,10 +20,16 @@ namespace Slutprojekt
 
         public MainWindow()
         {
+            //En klocka vid sidan som berättar vad klockan är
             InitializeComponent();
+            DispatcherTimer clock = new DispatcherTimer();
+            clock.Interval = TimeSpan.FromSeconds(1);
+            clock.Tick += timer_Tick;
+            clock.Start();
 
             {
-
+                //Schackpjäserna får en bild beronde på deras ID
+                //W = White
                 for (int i = 1; i < 9; i++) ImageName[i] = "Chess_PawnW.png";
 
                 ImageName[9] = "Chess_RookW.png";
@@ -36,7 +41,7 @@ namespace Slutprojekt
                 ImageName[15] = "Chess_QueenW.png";
                 ImageName[16] = "Chess_KingW.png";
 
-
+                //B = Black
                 for (int i = 17; i < 25; i++) ImageName[i] = "Chess_PawnB.png";
 
                 ImageName[25] = "Chess_RookB.png";
@@ -48,6 +53,7 @@ namespace Slutprojekt
                 ImageName[31] = "Chess_QueenB.png";
                 ImageName[32] = "Chess_KingB.png";
 
+                //Bild ID för schackrutorna också
                 #region Images
                 ChessImages[1] = Ix1y1;
                 ChessImages[2] = Ix1y2;
@@ -125,6 +131,13 @@ namespace Slutprojekt
             StartGame();
         }
 
+        //En klocka vid sidan som berättar vad klockan är
+        void timer_Tick(object sender, EventArgs e)
+        {
+            Clock.Content = DateTime.Now.ToLongTimeString();
+        }
+
+        //Startar schackspelet
         public static void StartGame()
         {
             int x = 0;
@@ -133,7 +146,8 @@ namespace Slutprojekt
             x = 1;
             y = 2;
 
-            #region Place pieces
+            //Placerar ut alla pjäser på rätt plats
+            #region Place Pieces
             int[] PawnW = Game.Piece.White.Pawn;
             int[] RookW = Game.Piece.White.Rook;
             int[] KnightW = Game.Piece.White.Knight;
@@ -222,6 +236,7 @@ namespace Slutprojekt
             #endregion
         }
 
+        //Alla knappar som finns på denna schackbräda
         #region Click On Chess Button
         private void x1y1_Click(object sender, RoutedEventArgs e)
         {
@@ -481,6 +496,7 @@ namespace Slutprojekt
         }
         #endregion
 
+        //Svarta ute pjäser
         #region Black Out
         private void Black1_Click(object sender, RoutedEventArgs e)
         {
@@ -563,6 +579,7 @@ namespace Slutprojekt
         }
         #endregion
 
+        //Vita ute pjäser
         #region White Out
         private void White1_Click(object sender, RoutedEventArgs e)
         {

@@ -15,6 +15,4 @@ namespace Slutprojekt
         public static int DownRight = 7;
         public static int DownLeft = 8;
     }
-
-
 }
